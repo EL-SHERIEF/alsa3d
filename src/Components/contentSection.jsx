@@ -1,4 +1,4 @@
-import { CloudArrowUpIcon,WifiIcon,BoltIcon,ShieldCheckIcon,ArrowTopRightOnSquareIcon   } from '@heroicons/react/20/solid'
+import {WifiIcon,BoltIcon,ShieldCheckIcon,ArrowTopRightOnSquareIcon   } from '@heroicons/react/20/solid'
 import img1 from '../img/1.jpg'
 import { useTranslation } from 'react-i18next';
 

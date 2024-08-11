@@ -1,4 +1,4 @@
-import { WifiIcon,SparklesIcon,CheckBadgeIcon,ClockIcon,ShieldCheckIcon,CurrencyDollarIcon,ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { WifiIcon,SparklesIcon,CheckBadgeIcon,ClockIcon,ShieldCheckIcon,CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { useTranslation } from 'react-i18next';
 
 
@@ -17,7 +17,7 @@ export default function AboutSection() {
   const serviceCards = t('serviceCards', { returnObjects: true });
 
   return (
-    <div className="bg-white py-24 sm:py-20">
+    <div className="bg-white py-24 sm:py-20 mt-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">{t('serviceSectionTag')}</h2>

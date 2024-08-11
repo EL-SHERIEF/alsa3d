@@ -56,6 +56,10 @@
       }
         ]
   },
+  
+  "about2title":"Fast, safe and reliable in Riyadh",
+  "about2describtion":"We provide university transportation services and Delivery of female students: College of Technology in Riyadh - Digital College in Riyadh.",
+
   "bannerTitle": "Enhance Your Daily Commute",
   "bannerSubtitle": "Start using our transportation service today",
   "bannerDescription": "Join us for a safe, reliable, and comfortable transportation experience tailored for female students in Riyadh. Let us handle your commute so you can focus on what really matters.",
@@ -87,7 +91,22 @@
   ],
   "sectionCarDescription3": "the H1 may offer additional comfort amenities such as rear air conditioning vents, USB charging ports, and entertainment systems. These features contribute to a more enjoyable and pleasant travel experience for passengers.",
 "sectionCarTitle2": "Are you looking for a better transportation experience?",
-"sectionCarDescription4": "Enjoy a safe, reliable, and comfortable transportation service designed specifically for female students in Riyadh. Let us handle your commute so you can focus on what truly matters."
+"sectionCarDescription4": "Enjoy a safe, reliable, and comfortable transportation service designed specifically for female students in Riyadh. Let us handle your commute so you can focus on what truly matters.",
 
-
+"offers":"Offers",
+"offerItems": [
+  {
+    "title": "Spacious Interior",
+    "tag": "Hyundai H1"
+  },
+  {
+    "title": "Advanced Safety Features",
+    "tag": "security"
+  },
+  {
+    "title": "Efficient Performance",
+    "tag": "economy"
+  }
+],
+"banner2text":"here in abohassan we use very specific protocols to make sure every thing is safe and secure also we provide top-notch comfort vehicles"
 }

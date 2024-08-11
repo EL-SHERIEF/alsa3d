@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer = () => {   
+     const { t } = useTranslation();
+
   return (
     <footer class="w-full">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -8,7 +11,9 @@ const Footer = () => {
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
             <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
                 <a href="https://pagedone.io/"  class="flex justify-center lg:justify-start">
-                  <img className='w-17 h-16 brightness-0 opacity-80' src="https://el-sherief.github.io/img/logo.png" alt="" />
+                <h1 className='text-center text-4xl/[0] font-extrabold tracking-tighter text-indigo-700 mb-20'>
+    {t('logo')}
+    </h1>
                 </a>
                 <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
                 <a href="#"  class="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0">
