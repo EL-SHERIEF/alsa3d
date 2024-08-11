@@ -88,19 +88,21 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-  
-                <a
+  <div className='flex flex-col w-full flex-wrap justify-start items-start sm:flex-row gap-2'>
+    
+  <a
                   href="#"
-                  className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                  className="rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
                   {t('heroButton')}
                 </a>
                 <a dir="ltr"
                   href="#"
-                  className="inline-block rounded-md border border-transparent px-8 py-3 text-center font-medium text-gray-600 hover:text-indigo-700"
+                  className="rounded-md border border-transparent px-8 py-3 text-center font-medium text-gray-600 hover:text-indigo-700"
                 >
                   {t('heroButton2')}
                 </a>
+  </div>
               </div>
             </div>
           </div>
