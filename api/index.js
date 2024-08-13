@@ -30,27 +30,33 @@ let db;
 // Connect to MongoDB
 client.connect().then(() => {
   console.log("Connected to MongoDB!");
-  db = client.db("your-database-name"); // Replace with your database name
+  db = client.db("stfu"); // Replace with your database name
 }).catch(err => {
   console.error('Error connecting to MongoDB:', err);
 });
 
 // API route to get translation
 app.get('/api/getTranslation', (req, res) => {
-  const filePath = path.resolve('../src/locales/en/translation.json'); // Adjust path as necessary
+  const filePath = path.resolve(__dirname, '../src/locales/en/translation.json'); // Adjust path as necessary
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
       return res.status(500).json({ error: 'Failed to load data' });
     }
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(JSON.parse(data));
+    try {
+      const jsonData = JSON.parse(data);
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(jsonData);
+    } catch (parseError) {
+      console.error('Error parsing JSON:', parseError);
+      res.status(500).json({ error: 'Failed to parse data' });
+    }
   });
 });
 
 // API route to save translation
 app.post('/api/saveTranslation', (req, res) => {
-  const filePath = path.resolve('../src/locales/en/translation.json'); // Adjust path as necessary
+  const filePath = path.resolve(__dirname, '../src/locales/en/translation.json'); // Adjust path as necessary
   fs.writeFile(filePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
     if (err) {
       console.error('Error writing file:', err);
