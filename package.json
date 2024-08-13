@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build & node index.js",
     "deploy": "vercel --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
