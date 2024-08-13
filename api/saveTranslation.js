@@ -8,12 +8,8 @@ export default async function handler(req, res) {
         useUnifiedTopology: true,
       });
       const db = client.db();
-      const { locale = 'en', translations } = req.body;
-      await db.collection('translations').updateOne(
-        { locale },
-        { $set: { translations } },
-        { upsert: true }
-      );
+      const { locale, translations } = req.body;
+      await db.collection('translations').updateOne({ locale }, { $set: { translations } }, { upsert: true });
       client.close();
       res.status(200).json({ message: 'File updated successfully' });
     } catch (error) {

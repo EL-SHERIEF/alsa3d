@@ -1,7 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
-require('dotenv').config(); // Load environment variables from .env file
+import express from 'express';
+import cors from 'cors';
+import { MongoClient, ServerApiVersion } from 'mongodb';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 
@@ -64,7 +66,7 @@ app.post('/api/saveTranslation', async (req, res) => {
 });
 
 // Export the Express app as a module for serverless function
-module.exports = app;
+export default app;
 
 // Start the server if running locally
 if (process.env.NODE_ENV !== 'production') {
