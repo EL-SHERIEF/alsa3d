@@ -1,9 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
-const { MongoClient, ServerApiVersion } = require('mongodb');
-require('dotenv').config(); // Load environment variables from .env file
+import express from 'express';
+import cors from 'cors';
+import { MongoClient, ServerApiVersion } from 'mongodb';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 
@@ -36,38 +36,37 @@ client.connect().then(() => {
 });
 
 // API route to get translation
-app.get('/api/getTranslation', (req, res) => {
-  const filePath = path.resolve(__dirname, '../src/locales/en/translation.json'); // Adjust path as necessary
-  fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading file:', err);
-      return res.status(500).json({ error: 'Failed to load data' });
+app.get('/api/getTranslation', async (req, res) => {
+  try {
+    const translations = await db.collection('translations').findOne({ locale: 'en' });
+    if (!translations) {
+      return res.status(404).json({ error: 'Translations not found' });
     }
-    try {
-      const jsonData = JSON.parse(data);
-      res.setHeader('Content-Type', 'application/json');
-      res.status(200).json(jsonData);
-    } catch (parseError) {
-      console.error('Error parsing JSON:', parseError);
-      res.status(500).json({ error: 'Failed to parse data' });
-    }
-  });
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(translations);
+  } catch (error) {
+    console.error('Error fetching translations:', error);
+    res.status(500).json({ error: 'Failed to fetch translations' });
+  }
 });
 
 // API route to save translation
-app.post('/api/saveTranslation', (req, res) => {
-  const filePath = path.resolve(__dirname, '../src/locales/en/translation.json'); // Adjust path as necessary
-  fs.writeFile(filePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
-    if (err) {
-      console.error('Error writing file:', err);
-      return res.status(500).json({ error: 'Failed to save data' });
-    }
-    res.status(200).json({ message: 'File updated successfully' });
-  });
+app.post('/api/saveTranslation', async (req, res) => {
+  try {
+    await db.collection('translations').updateOne(
+      { locale: 'en' },
+      { $set: req.body },
+      { upsert: true }
+    );
+    res.status(200).json({ message: 'Translations updated successfully' });
+  } catch (error) {
+    console.error('Error saving translations:', error);
+    res.status(500).json({ error: 'Failed to save translations' });
+  }
 });
 
 // Export the Express app as a module for serverless function
-module.exports = app;
+export default app;
 
 // Start the server if running locally
 if (process.env.NODE_ENV !== 'production') {

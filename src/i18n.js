@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import translationEN from './locales/en/translation.json';
-import translationAR from './locales/ar/translation.json';
+import translationEN from 'https://abohassan.vercel.app/locales/en/translation.json';
+import translationAR from 'https://abohassan.vercel.app/locales/ar/translation.json';
 
 // Define the resources with translations for each language
 const resources = {
