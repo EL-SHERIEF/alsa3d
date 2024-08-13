@@ -11,7 +11,7 @@ import Stats from "./Components/stats";
 import Footer from "./Components/footer";
 import Banner2 from "./Components/Banner2";
 import Offers from "./Components/Offers";
-import AdminPage from './admin'; // Import your AdminPage component
+import AdminPage from '../admin/index'; // Import your AdminPage component
 
 function App() {
   return (
