@@ -9,7 +9,7 @@ const AdminPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/getTranslation');
+        const response = await fetch('/api/getTranslation');
         
         // Check if the response is OK
         if (!response.ok) {
@@ -58,7 +58,7 @@ const AdminPage = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/saveTranslation', {
+      const response = await fetch('/api/saveTranslation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
