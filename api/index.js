@@ -37,7 +37,7 @@ client.connect().then(() => {
 
 // API route to get translation
 app.get('/api/getTranslation', (req, res) => {
-  const filePath = path.resolve(__dirname, '../public/locales/en/translation.json'); // Adjust path as necessary
+  const filePath = path.resolve(__dirname, 'https://abohassan.vercel.app/locales/en/translation.json'); // Adjust path as necessary
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
