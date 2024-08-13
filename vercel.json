@@ -2,6 +2,6 @@
     "version": 2,
     "rewrites": [
       { "source": "/api/(.*)", "destination": "/api/$1" },
-      { "source": "/locales/(.*)", "destination": "/public/locales/$1" }
+      { "source": "/(.*)", "destination": "/" }
     ]
   }

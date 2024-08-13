@@ -37,7 +37,7 @@ client.connect().then(() => {
 
 // API route to get translation
 app.get('/api/getTranslation', (req, res) => {
-  const filePath = path.resolve(__dirname, 'https://abohassan.vercel.app/locales/en/translation.json'); // Adjust path as necessary
+  const filePath = path.resolve('https://abohassan.vercel.app/locales/en/translation.json'); // Adjust path as necessary
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
@@ -56,7 +56,7 @@ app.get('/api/getTranslation', (req, res) => {
 
 // API route to save translation
 app.post('/api/saveTranslation', (req, res) => {
-  const filePath = path.resolve(__dirname, 'https://abohassan.vercel.app/locales/en/translation.json'); // Adjust path as necessary
+  const filePath = path.resolve('https://abohassan.vercel.app/locales/en/translation.json'); // Adjust path as necessary
   fs.writeFile(filePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
     if (err) {
       console.error('Error writing file:', err);
