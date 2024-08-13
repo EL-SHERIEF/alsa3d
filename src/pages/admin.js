@@ -58,25 +58,33 @@ const AdminPage = () => {
 
   const handleSave = async () => {
     try {
-      await fetch('http://localhost:3000/api/saveTranslation', {
+      const response = await fetch('http://localhost:3000/api/saveTranslation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(jsonData),
       });
-      alert('Changes saved successfully');
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorData.error || 'Unknown error'}`);
+      }
+  
+      const result = await response.json();
+      alert('Changes saved successfully: ' + result.message);
     } catch (error) {
       console.error('Error saving data:', error);
-      alert('Failed to save changes');
+      alert('Failed to save changes: ' + error.message);
     }
   };
+  
 
   return (
-    <div className='w-[95%] mx-[2.5%] flex flex-col justify-center items-center'>
-      <h1 className='text-2xl font-bold my-5'>Admin - Edit Translations</h1>
-      <div id="json-editor" className='w-full' style={{ height: '70vh' }}></div>
-      <button onClick={handleSave} className='w-[90%] flex-1 flex justify-center items-center py-5 px-0 my-5 rounded-lg bg-violet-700 hover:bg-violet-800 transition-colors text-white font-bold'>Save Changes</button>
+    <div>
+      <h1>Admin - Edit Translations</h1>
+      <div id="json-editor" style={{ height: '500px' }}></div>
+      <button onClick={handleSave}>Save Changes</button>
     </div>
   );
 };
