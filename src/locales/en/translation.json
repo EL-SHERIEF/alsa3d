@@ -1,15 +1,13 @@
 {
-  "logo":"Abohassan",
-  "navLink1":"Services",
-  "navLink2":"Our Cars",
-  "navLink3":"About us",
-  "navLink4":"Contacts",
-
+  "logo": "Abohassan",
+  "navLink1": "Services",
+  "navLink2": "Our Cars",
+  "navLink3": "About us",
+  "navLink4": "Contacts",
   "welcome": "Welcome to Our Student Transportation Service",
   "description": "At Abohassan, we are committed to providing safe and reliable transportation solutions for female students in Riyadh. Our services include transportation from neighborhoods such as Al-Laban Al-Sharqiya and Al-Laban Al-Gharbi, as well as popular locations like Hayat Mall, Marina Mall, Riyadh Gallery, and Panorama Mall.",
   "heroButton": "Get in Touch",
   "heroButton2": "+966 0105 474 5996",
-
   "serviceSectionTag": "Experience Excellence",
   "serviceSectionHeader": "Exceptional Services Tailored for You",
   "serviceSectionSubHeader": "Discover a range of premium services designed to cater to your unique needs. Our commitment is to provide you with the highest standards of convenience and safety.",
@@ -39,8 +37,7 @@
       "description": "Highly skilled and professional drivers ensuring a smooth ride."
     }
   ],
-
- "stats": {
+  "stats": {
     "items": [
       {
         "title": "10+",
@@ -54,19 +51,16 @@
         "title": "15+",
         "description": "Top-notch security measures Vehicles"
       }
-        ]
+    ]
   },
-  
-  "about2title":"Fast, safe and reliable in Riyadh",
-  "about2describtion":"We provide university transportation services and Delivery of female students: College of Technology in Riyadh - Digital College in Riyadh.",
-
+  "about2title": "Fast, safe and reliable in Riyadh",
+  "about2describtion": "We provide university transportation services and Delivery of female students: College of Technology in Riyadh - Digital College in Riyadh.",
   "bannerTitle": "Enhance Your Daily Commute",
   "bannerSubtitle": "Start using our transportation service today",
   "bannerDescription": "Join us for a safe, reliable, and comfortable transportation experience tailored for female students in Riyadh. Let us handle your commute so you can focus on what really matters.",
   "bannerCtaButton": "Get Started",
   "bannerContactNumber": "+966 0105 474 5996",
   "bannerAdditionalInfo": "For inquiries or to book your ride, contact us anytime.",
-
   "sectionCarTagline": "Reliable and Comfortable",
   "sectionCarTitle": "A Better Transportation Experience",
   "sectionCarDescription": "The Hyundai H1 is designed to offer spacious comfort and reliable performance. Whether you're commuting or taking a long trip, the H1 provides a superior driving experience.",
@@ -90,23 +84,22 @@
     }
   ],
   "sectionCarDescription3": "the H1 may offer additional comfort amenities such as rear air conditioning vents, USB charging ports, and entertainment systems. These features contribute to a more enjoyable and pleasant travel experience for passengers.",
-"sectionCarTitle2": "Are you looking for a better transportation experience?",
-"sectionCarDescription4": "Enjoy a safe, reliable, and comfortable transportation service designed specifically for female students in Riyadh. Let us handle your commute so you can focus on what truly matters.",
-
-"offers":"Offers",
-"offerItems": [
-  {
-    "title": "Spacious Interior",
-    "tag": "Hyundai H1"
-  },
-  {
-    "title": "Advanced Safety Features",
-    "tag": "security"
-  },
-  {
-    "title": "Efficient Performance",
-    "tag": "economy"
-  }
-],
-"banner2text":"here in abohassan we use very specific protocols to make sure every thing is safe and secure also we provide top-notch comfort vehicles"
+  "sectionCarTitle2": "Are you looking for a better transportation experience?",
+  "sectionCarDescription4": "Enjoy a safe, reliable, and comfortable transportation service designed specifically for female students in Riyadh. Let us handle your commute so you can focus on what truly matters.",
+  "offers": "Offers",
+  "offerItems": [
+    {
+      "title": "Spacious Interior",
+      "tag": "Hyundai H1"
+    },
+    {
+      "title": "Advanced Safety Features",
+      "tag": "security"
+    },
+    {
+      "title": "Efficient Performance",
+      "tag": "economy"
+    }
+  ],
+  "banner2text": "here in abohassan we use very specific protocols to make sure every thing is safe and secure also we provide top-notch comfort vehicles"
 }
