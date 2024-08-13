@@ -1,18 +1,17 @@
-import fs from 'fs';
-import path from 'path';
+import { MongoClient } from 'mongodb';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const filePath = path.resolve('../../locales/en/translation.json'); // Adjust path as necessary
-    fs.writeFile(filePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
-      if (err) {
-        console.error('Error writing file:', err);
-        return res.status(500).json({ error: 'Failed to save data' });
-      }
-      res.status(200).json({ message: 'File updated successfully' });
+    const client = await MongoClient.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     });
+    const db = client.db();
+    const { locale, translations } = req.body;
+    await db.collection('translations').updateOne({ locale }, { $set: { translations } }, { upsert: true });
+    client.close();
+    res.status(200).json({ message: 'File updated successfully' });
   } else {
-    res.setHeader('Allow', ['POST']);
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 }
