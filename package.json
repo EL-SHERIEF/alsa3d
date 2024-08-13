@@ -1,7 +1,6 @@
 {
   "name": "alsa3d",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^2.1.2",

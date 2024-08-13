@@ -1,7 +1,10 @@
 {
-    "version": 2,
-    "rewrites": [
-      { "source": "/api/(.*)", "destination": "/api/$1" },
-      { "source": "/locales/(.*)", "destination": "/public/locales/$1" }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    { "source": "source/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/source/$1" }
+  ]
+}
