@@ -37,3 +37,10 @@ app.post('/api/saveTranslation', (req, res) => {
 });
 
 module.exports = app;
+
+// Only listen if not running in a serverless function environment
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+  });
+}
