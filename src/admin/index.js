@@ -8,7 +8,7 @@ const DataEditor = () => {
   const [editor, setEditor] = useState(null);
   const api = "https://abohassan.vercel.app"
   useEffect(() => {
-    fetch(`${api}/api/getTranslations`)
+    fetch(`${api}/api/getTranslation`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -32,7 +32,7 @@ const DataEditor = () => {
   const handleSave = () => {
     if (editor) {
       const updatedData = editor.get();
-      fetch(`${api}/api/saveTranslations`, {
+      fetch(`${api}/api/saveTranslation`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
