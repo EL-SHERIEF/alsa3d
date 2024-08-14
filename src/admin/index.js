@@ -6,7 +6,7 @@ import 'jsoneditor/dist/jsoneditor.css';
 const DataEditor = () => {
   const [data, setData] = useState(null);
   const [editor, setEditor] = useState(null);
-  const api = "abohassan.vercel.app"
+  const api = "https://abohassan.vercel.app"
   useEffect(() => {
     fetch(`${api}/api/getTranslations`)
       .then(response => response.json())
