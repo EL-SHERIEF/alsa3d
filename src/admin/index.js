@@ -31,22 +31,36 @@ const DataEditor = () => {
 
   const handleSave = () => {
     if (editor) {
-      const updatedData = editor.get();
+      const updatedData = editor.get(); // Get the updated data from the editor
+      
       fetch(`${api}/api/saveTranslation`, {
-        method: 'POST',
+        method: 'POST', // Use POST method to send data
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json', // Ensure the server interprets the data as JSON
         },
-        body: JSON.stringify(updatedData),
+        body: JSON.stringify(updatedData), // Convert data to JSON string
       })
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
         .then(data => {
           console.log('Data saved successfully:', data);
-          // Optionally, show a success message
+          // Optionally, show a success message to the user
+          alert('Data saved successfully!');
         })
-        .catch(error => console.error('Error saving data:', error));
+        .catch(error => {
+          console.error('Error saving data:', error);
+          // Optionally, show an error message to the user
+          alert('Error saving data. Please try again.');
+        });
+    } else {
+      console.warn('Editor instance is not available.');
     }
   };
+  
 
   return (
     <div>
