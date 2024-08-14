@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
+// DataEditor.js
+import React, { useState, useEffect } from 'react';
 import JSONEditor from 'jsoneditor';
 import 'jsoneditor/dist/jsoneditor.css';
 
@@ -12,7 +13,7 @@ const DataEditor = () => {
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
-  }, [api]);
+  }, []);
 
   useEffect(() => {
     if (data) {
@@ -26,22 +27,19 @@ const DataEditor = () => {
       const jsonEditor = new JSONEditor(container, options);
       jsonEditor.set(data);
       setEditor(jsonEditor);
-
-      // Cleanup function to destroy editor instance on unmount or data change
-      return () => jsonEditor.destroy();
     }
-  }, [data, editor]);
+  }, [data]);
 
-  const handleSave = useCallback(() => {
+  const handleSave = () => {
     if (editor) {
       const updatedData = editor.get(); // Get the updated data from the editor
       
       fetch(`${api}/api/saveTranslation`, {
-        method: 'POST', // Use POST method to send data
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Ensure the server interprets the data as JSON
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(updatedData), // Convert data to JSON string
+        body: JSON.stringify(updatedData),
       })
         .then(response => {
           if (!response.ok) {
@@ -51,23 +49,21 @@ const DataEditor = () => {
         })
         .then(data => {
           console.log('Data saved successfully:', data);
-          // Optionally, show a success message to the user
           alert('Data saved successfully!');
         })
         .catch(error => {
           console.error('Error saving data:', error);
-          // Optionally, show an error message to the user
           alert('Error saving data. Please try again.');
         });
     } else {
       console.warn('Editor instance is not available.');
     }
-  }, [editor, api]);
+  };
 
   return (
     <div>
       <div id="jsoneditor" style={{ height: '600px' }}></div>
-      <button onClick={handleSave}>Save Changes</button>
+      <button onClick={handleSave} id="save-button" name="saveButton">Save Changes</button>
     </div>
   );
 };
