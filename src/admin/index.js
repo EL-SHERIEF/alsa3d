@@ -33,6 +33,8 @@ const DataEditor = () => {
     if (editor) {
       const updatedData = editor.get(); // Get the updated data from the editor
       
+      console.log('Sending Save Request:', updatedData); // Log the data being sent
+      
       fetch(`${api}/api/saveTranslation`, {
         method: 'POST', // Use POST method to send data
         headers: {
@@ -48,12 +50,10 @@ const DataEditor = () => {
         })
         .then(data => {
           console.log('Data saved successfully:', data);
-          // Optionally, show a success message to the user
           alert('Data saved successfully!');
         })
         .catch(error => {
           console.error('Error saving data:', error);
-          // Optionally, show an error message to the user
           alert('Error saving data. Please try again.');
         });
     } else {

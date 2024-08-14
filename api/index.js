@@ -27,6 +27,7 @@ app.get('/api/getTranslation', (req, res) => {
 });
 
 app.post('/api/saveTranslation', (req, res) => {
+  console.log('Save Translation Request:', req.body); // Log the request body
   fs.writeFile(jsonFilePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
     if (err) {
       console.error('Error saving file:', err);
