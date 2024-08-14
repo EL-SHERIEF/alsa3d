@@ -3,10 +3,12 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 const app = express();
+
 app.use(express.json());
 app.use(cors());
 
-const jsonFilePath = path.join(__dirname, '../src/locales/en/translation.json');
+// Correct the file path to ensure it's accessible
+const jsonFilePath = path.resolve(__dirname, '../src/locales/en/translation.json');
 
 app.get('/api/getTranslation', (req, res) => {
   fs.readFile(jsonFilePath, 'utf8', (err, data) => {
@@ -34,11 +36,4 @@ app.post('/api/saveTranslation', (req, res) => {
   });
 });
 
-module.exports = app; // Export the app
-
-// Only listen if not running in a serverless function environment
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-  });
-}
+module.exports = app;
