@@ -1,13 +1,12 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const cors = require('cors');
-const app = express();
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import cors from 'cors';
 
+const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Correct the file path to ensure it's accessible
 const jsonFilePath = path.resolve(__dirname, '../src/locales/en/translation.json');
 
 app.get('/api/getTranslation', (req, res) => {
@@ -33,11 +32,9 @@ app.post('/api/saveTranslation', (req, res) => {
       console.error('Error saving file:', err);
       return res.status(500).json({ error: 'Error saving file', details: err.message });
     }
-    res.json({ message: 'File saved successfully' });
+    res.status(200).json({ message: 'File saved successfully' });
   });
 });
-
-module.exports = app;
 
 // Only listen if not running in a serverless function environment
 if (process.env.NODE_ENV !== 'production') {
@@ -45,3 +42,5 @@ if (process.env.NODE_ENV !== 'production') {
     console.log('Server is running on port 3000');
   });
 }
+
+export default app;
