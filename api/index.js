@@ -8,7 +8,7 @@ app.use(cors());
 
 const jsonFilePath = path.join(__dirname, '../src/locales/en/translation.json');
 
-app.get('/api/getTranslations', (req, res) => {
+app.get('/api/getTranslation', (req, res) => {
   fs.readFile(jsonFilePath, 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
@@ -24,7 +24,7 @@ app.get('/api/getTranslations', (req, res) => {
   });
 });
 
-app.post('/api/saveTranslations', (req, res) => {
+app.post('/api/saveTranslation', (req, res) => {
   fs.writeFile(jsonFilePath, JSON.stringify(req.body, null, 2), 'utf8', (err) => {
     if (err) {
       console.error('Error saving file:', err);
