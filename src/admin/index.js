@@ -44,7 +44,9 @@ const DataEditor = () => {
       })
         .then(response => {
           if (!response.ok) {
-            throw new Error('Network response was not ok');
+            return response.text().then(text => {
+              throw new Error(`Network response was not ok: ${response.status} ${response.statusText} ${text}`);
+            });
           }
           return response.json();
         })
@@ -56,6 +58,7 @@ const DataEditor = () => {
           console.error('Error saving data:', error);
           alert('Error saving data. Please try again.');
         });
+      
     } else {
       console.warn('Editor instance is not available.');
     }
