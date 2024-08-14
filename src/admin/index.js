@@ -1,4 +1,3 @@
-// DataEditor.js
 import React, { useState, useEffect } from 'react';
 import JSONEditor from 'jsoneditor';
 import 'jsoneditor/dist/jsoneditor.css';
@@ -6,7 +5,8 @@ import 'jsoneditor/dist/jsoneditor.css';
 const DataEditor = () => {
   const [data, setData] = useState(null);
   const [editor, setEditor] = useState(null);
-  const api = "https://abohassan.vercel.app"
+  const api = "https://abohassan.vercel.app";
+
   useEffect(() => {
     fetch(`${api}/api/getTranslation`)
       .then(response => response.json())
@@ -31,16 +31,16 @@ const DataEditor = () => {
 
   const handleSave = () => {
     if (editor) {
-      const updatedData = editor.get(); // Get the updated data from the editor
+      const updatedData = editor.get();
       
-      console.log('Sending Save Request:', updatedData); // Log the data being sent
+      console.log('Sending Save Request:', updatedData);
       
       fetch(`${api}/api/saveTranslation`, {
-        method: 'POST', // Use POST method to send data
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Ensure the server interprets the data as JSON
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(updatedData), // Convert data to JSON string
+        body: JSON.stringify(updatedData),
       })
         .then(response => {
           if (!response.ok) {
@@ -60,7 +60,6 @@ const DataEditor = () => {
       console.warn('Editor instance is not available.');
     }
   };
-  
 
   return (
     <div>
