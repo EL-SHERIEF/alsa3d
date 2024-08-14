@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -31,11 +30,15 @@ app.post('/api/save-json', (req, res) => {
       console.error('Error saving file:', err);
       return res.status(500).json({ error: 'Error saving file', details: err.message });
     }
-    // Return a JSON response
     res.json({ message: 'File saved successfully' });
   });
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+module.exports = app; // Export the app
+
+// Only listen if not running in a serverless function environment
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+  });
+}
