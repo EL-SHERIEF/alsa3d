@@ -11,7 +11,7 @@ import Stats from "./Components/stats";
 import Footer from "./Components/footer";
 import Banner2 from "./Components/Banner2";
 import Offers from "./Components/Offers";
-import AdminPage from './admin/index'; // Import your AdminPage component
+import  DataEditor from './admin/index'; // Import your AdminPage component
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
                 <Footer/>
               </>
             } />
-           <Route path="/admin" element={<AdminPage />} />
+           <Route path="/admin" element={<DataEditor />} />
           </Routes>
         </div>
       </Router>

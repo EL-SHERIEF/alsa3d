@@ -1,18 +1,18 @@
-// DataEditor.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import JSONEditor from 'jsoneditor';
 import 'jsoneditor/dist/jsoneditor.css';
 
 const DataEditor = () => {
   const [data, setData] = useState(null);
   const [editor, setEditor] = useState(null);
-  const api = "https://abohassan.vercel.app"
+  const api = "https://abohassan.vercel.app";
+
   useEffect(() => {
     fetch(`${api}/api/getTranslation`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  }, [api]);
 
   useEffect(() => {
     if (data) {
@@ -26,10 +26,13 @@ const DataEditor = () => {
       const jsonEditor = new JSONEditor(container, options);
       jsonEditor.set(data);
       setEditor(jsonEditor);
-    }
-  }, [data]);
 
-  const handleSave = () => {
+      // Cleanup function to destroy editor instance on unmount or data change
+      return () => jsonEditor.destroy();
+    }
+  }, [data, editor]);
+
+  const handleSave = useCallback(() => {
     if (editor) {
       const updatedData = editor.get(); // Get the updated data from the editor
       
@@ -59,8 +62,7 @@ const DataEditor = () => {
     } else {
       console.warn('Editor instance is not available.');
     }
-  };
-  
+  }, [editor, api]);
 
   return (
     <div>
