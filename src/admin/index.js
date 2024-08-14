@@ -6,7 +6,7 @@ import 'jsoneditor/dist/jsoneditor.css';
 const DataEditor = () => {
   const [data, setData] = useState(null);
   const [editor, setEditor] = useState(null);
-  const api = "http://localhost:3000"
+  const api = "https://abohassan.vercel.app"
   useEffect(() => {
     fetch(`${api}/api/get-json`)
       .then(response => response.json())
