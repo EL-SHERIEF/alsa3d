@@ -8,8 +8,8 @@ import img7 from '../img/7.jpg'
 import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
-    const { t } = useTranslation();
-    return (
+  const { t, i18n } = useTranslation();
+  return (
       <div className="relative overflow-hidden bg-white mt-[80px] ">
         <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -25,8 +25,8 @@ export default function Hero() {
               <div className="mt-10">
                 {/* Decorative image grid */}
                 <div
-                  aria-hidden="true"
-                  className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+                  
+                  className="lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
                 >
                   <div className="absolute transform sm:start-1/2 sm:top-0 sm:translate-x-8  lg:start-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                     <div className="flex items-center">
@@ -34,37 +34,14 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <img
                             alt=""
-                            src={img1}
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img1}
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src={img2}
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8 mx-3">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src={img3}
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src={img4}
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src={img5}
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img2}
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
@@ -73,14 +50,37 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src={img6}
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img3}
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src={img7}
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img4}
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img5}
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8 mx-3">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img6}
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={i18n.options.resources[i18n.language].images.heroImgs.img7}
                             className="h-full w-full object-cover object-center"
                           />
                         </div>

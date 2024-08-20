@@ -90,15 +90,18 @@
   "offerItems": [
     {
       "title": "Spacious Interior",
-      "tag": "Hyundai H1"
+      "tag": "Hyundai H1",
+      "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103567/hyundaih1_zr19vz.jpg"
     },
     {
-      "title": "Advanced Safety Features",
-      "tag": "security"
+      "title": "Spacious Interior",
+      "tag": "Hyundai H1",
+      "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103567/hyundaih1_zr19vz.jpg"
     },
     {
-      "title": "Efficient Performance",
-      "tag": "economy"
+      "title": "Spacious Interior",
+      "tag": "Hyundai H1",
+      "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103567/hyundaih1_zr19vz.jpg"
     }
   ],
   "banner2text": "here in abohassan we use very specific protocols to make sure every thing is safe and secure also we provide top-notch comfort vehicles"

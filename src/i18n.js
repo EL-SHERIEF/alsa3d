@@ -1,32 +1,32 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translationEN from './locales/en/translation.json';
-import translationAR from './locales/ar/translation.json'
+import translationAR from './locales/ar/translation.json';
+import imgs from './locales/img.json';
 
-// Define the resources with translations for each language
 const resources = {
   en: {
     translation: translationEN,
+    images: imgs
   },
   ar: {
     translation: translationAR,
+    images: imgs
   },
 };
 
 i18n
-  .use(initReactI18next) // Pass the i18n instance to react-i18next
+  .use(initReactI18next)
   .init({
     resources,
-    lng: 'ar', // Default language
-    fallbackLng: 'en', // Fallback language if translation is missing
+    lng: 'ar',
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // React already does escaping
+      escapeValue: false,
     },
-    // Function to determine the direction of text based on the language
     react: {
       useSuspense: false,
     },
-    // Add a function to get the direction of the text
     dir: (lng) => (['ar'].includes(lng) ? 'rtl' : 'ltr'),
   });
 

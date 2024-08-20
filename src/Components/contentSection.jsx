@@ -3,7 +3,7 @@ import img1 from '../img/1.jpg'
 import { useTranslation } from 'react-i18next';
 
 export default function ContentSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const Car = t('Carfeatures', { returnObjects: true });
   const icons = [
     <ArrowTopRightOnSquareIcon className="h-8 w-10 text-indigo-600"/>,
@@ -54,7 +54,7 @@ export default function ContentSection() {
         <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt=""
-            src={img1}
+            src={i18n.options.resources[i18n.language].images.ContentSectionImgs.img1}
             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>

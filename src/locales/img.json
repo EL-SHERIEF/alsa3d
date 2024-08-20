@@ -1,0 +1,21 @@
+{
+    "heroImgs": {
+        "img1": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724104028/UberIM_005747_kiqtyk.webp",
+        "img2": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103973/br-5972lajandrive16mga02_rkmjxk.webp",
+        "img3": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103567/hyundaih1_zr19vz.jpg",
+        "img4": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103569/4_eqfttn.jpg",
+        "img5": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103797/H1-1-1024x768_qieh2s.jpg",
+        "img6": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103852/1-3-876x535_ausixu.webp",
+        "img7": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103573/9_ixchqi.jpg"
+    },
+    "aboutSectionImgs": {
+        "img1": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103746/1-3-876x535_jiqbwh.webp",
+        "img2": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103573/9_ixchqi.jpg"
+    },
+    "bannerImg": {
+        "img1": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103569/8_tbjryb.png"
+    },
+    "ContentSectionImgs": {
+        "img1": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724103567/hyundaih1_zr19vz.jpg"
+    }
+}

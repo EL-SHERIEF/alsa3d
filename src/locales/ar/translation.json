@@ -98,15 +98,24 @@
 "offerItems": [
   {
     "title": "داخلية فسيحة",
-    "tag": "هايونداي اتش وان"
+    "tag": "هايونداي اتش وان",
+    "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724106478/Untitled-1_copy_d4tthy.jpg"
   },
   {
     "title": "ميزات أمان متقدمة",
-    "tag": "ميزات الامان"
+    "tag": "ميزات الامان",
+    "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724106473/Untitled-12_copy1_gv5o04.png"
+
   },
   {
     "title": "أداء فعال",
-    "tag": "سائق مدرب"
+    "tag": "سائق مدرب",
+    "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724106473/Untitled-12_copy_wgbko7.png"
+  },
+  {
+    "title": "أداء فعال",
+    "tag": "سائق مدرب",
+    "img": "https://res.cloudinary.com/dnt8j2c21/image/upload/v1724106465/Untitled-12_copy22_ar98zf.png"
   }
 ],
 "banner2text":"نحن هنا في أبوحسن نستخدم بروتوكولات محددة للغاية للتأكد من أن كل شيء آمن ومأمون، كما نقدم مركبات مريحة من الدرجة الأولى"

@@ -5,8 +5,7 @@ import img2 from "../img/10.jpg"
 
 export default function aboutSection2() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const { t } = useTranslation();
-
+    const { t, i18n } = useTranslation();
   return (
 <section class="bg-white mt-20 mb-10">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
@@ -23,8 +22,8 @@ export default function aboutSection2() {
              </div>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full h-[370px] rounded-lg object-cover	" src={img1} alt="office content 1" />
-            <img class="mt-4 w-full h-[370px] lg:mt-10 rounded-lg object-cover	" src={img2} alt="office content 2"/>
+            <img class="w-full h-[370px] rounded-lg object-cover	" src={i18n.options.resources[i18n.language].images.aboutSectionImgs.img2} alt="car interior" />
+            <img class="mt-4 w-full h-[370px] lg:mt-10 rounded-lg object-cover	" src={i18n.options.resources[i18n.language].images.aboutSectionImgs.img1} alt="Hyundai H1"/>
         </div>
     </div>
 </section>

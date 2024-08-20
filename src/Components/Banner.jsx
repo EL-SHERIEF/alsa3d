@@ -2,7 +2,7 @@ import img8 from "../img/8.png"
 import { useTranslation } from 'react-i18next';
 
 export default function Banner() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
     return (
       <div className="bg-white">
@@ -50,7 +50,7 @@ export default function Banner() {
             <div className="relative mt-16 h-80 lg:mt-8">
               <img
                 alt="App screenshot"
-                src={img8}
+                src={i18n.options.resources[i18n.language].images.bannerImg.img1}
                 width={1824}
                 height={1080}
                 className="absolute start-0 top-0 w-[57rem] max-w-none rounded-md "
