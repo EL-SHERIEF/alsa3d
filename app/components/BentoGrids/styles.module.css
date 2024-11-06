@@ -1,0 +1,16 @@
+.textGradient{
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+    width: fit-content;
+    background:var(--custom-gradient);
+    padding: 4px 20px ;margin: 20px auto;
+    text-align: center;           /* text-center */
+    font-size: .8rem;              /* text-base (16px) */
+    line-height: 1.75rem;         /* leading-7 (28px) */
+    font-weight: 600; 
+    z-index: 20!important;position: relative!important;
+    border-radius: 14px;
+
+}
+

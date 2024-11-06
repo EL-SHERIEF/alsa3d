@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --custom-gradient:linear-gradient(to right, #00FFAA, #AAFF00);
+}
+
+body {
+  
+  font-family: var(--font-almarai), sans-serif;}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
