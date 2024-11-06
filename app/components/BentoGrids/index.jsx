@@ -36,6 +36,7 @@ export default function Bento() {
                 width={300} height={300}
                 alt="توصيل طالبات جامعة"
                 loading="lazy"
+                 placeholder="blur"
               />
               </div>
             </div>
@@ -58,6 +59,7 @@ export default function Bento() {
                 width={270} height={270}
                 alt="سيارة هيونداي اتش 1"
                 loading="lazy"
+                 placeholder="blur"
               />
             </div>
           </div>
@@ -78,7 +80,8 @@ export default function Bento() {
                 src={quality}
                 width={350} height={350}
                 alt="سائق خاص للجامعة"
-                loading="lazy"
+                 loading="lazy"
+                 placeholder="blur"
               />
             </div>
           </div>
@@ -101,7 +104,8 @@ export default function Bento() {
                 src={money}
                 width={450} height={450}
                 alt="ارخص خدمة توصيل"
-                loading="lazy"
+               loading="lazy"
+                 placeholder="blur"
               />
             </div>
           </div>

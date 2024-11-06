@@ -76,7 +76,7 @@ export default function Hero() {
         {slides.map((slide, index) => (
            <div key={index} dir="rtl" className=" h-[26rem] md:h-[calc(100vh-106px)]  w-full !flex flex-col !relative justify-end items-start">
            <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full z-0">
-            <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" width={900} height={900} loading="lazy" alt="انضمي لنا"/></div>
+            <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75} alt="انضمي لنا"/></div>
            <div className="mx-1 md:mx-5 w-[90%] md:max-w-4xl ps-5 pb-5 md:ps-10 md:pb-10 z-10 flex flex-col gap-[2px] sm:gap-2 items-start">
                          <span className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</span>
                          <span className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</span>
