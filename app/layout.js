@@ -40,6 +40,12 @@ export const metadata = {
     images: [
       {
         url: '/opengraph-image.jpg',
+        width: 200,
+        height: 150,
+        alt: "خدمة التوصيل الموسمي الأعلى أمانًا",
+      },
+      {
+        url: '/opengraph-image.jpg',
         width: 800,
         height: 600,
         alt: "خدمة التوصيل الموسمي الأعلى أمانًا",
