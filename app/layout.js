@@ -35,16 +35,17 @@ export const metadata = {
   openGraph: {
     title: 'ابو حســن | احسن طريقة تداومي بيها',
     description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",
-    url: 'https://nextjs.org',
+    url: 'https://abohassan.vercel.app/',
     siteName: 'ابو حســن',
     images: [
       {
-        url: './opengraph-image.jpg',
+        url: '/opengraph-image.jpg',
         width: 800,
         height: 600,
+        alt: "خدمة التوصيل الموسمي الأعلى أمانًا",
       },
       {
-        url: './opengraph-image.jpg',
+        url: '/opengraph-image.jpg',
         width: 1800,
         height: 1600,
         alt: '"خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",',

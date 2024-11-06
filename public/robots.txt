@@ -1,0 +1,6 @@
+# Allow all search engines
+User-agent: *
+Disallow:
+
+# Sitemap link
+Sitemap: https://abohassan.vercel.app/sitemap.xml
