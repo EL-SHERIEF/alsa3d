@@ -45,18 +45,18 @@ function classNames(...classes) {
 
 export default function Pricing() {
   return (
-    <div className="relative isolate bg-white px-6 py-24 sm:py-10 lg:px-8">
+    <div className="relative isolate bg-white px-6 py-0 sm:py-10 lg:px-8">
      
       <div className="mx-auto max-w-4xl text-center">
       <h2 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</h2>
       <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
       اختاري الباقة المناسبة
       </p>
-      </div>
-      <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-md font-medium text-gray-500 sm:text-lg/8">
+        <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-md font-medium text-gray-500 sm:text-lg/8">
         اختاري باقة مناسبة من الباقتين سواء كنتي موظفة او طالبة الباقات فيها جميع المميزات الي تبحثين عنها, التزام مواعيد, راحة و جودة بأفضل تكلفة وغيرها من المميزات 
    
       </p>
+      </div>
       <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
         {tiers.map((tier, tierIdx) => (
           <div
@@ -115,7 +115,7 @@ export default function Pricing() {
                 tier.featured
                   ? 'bg-neutral-900 text-white shadow-sm hover:bg-neutral-800 focus-visible:outline-black'
                   : 'text-green-400 ring-1 ring-inset ring-green-300 hover:ring-green-400 focus-visible:outline-green-400 bg-green-50',
-                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
+                'mt-8 block rounded-xl px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
               )}
             >
             انضمي إلينا اليوم

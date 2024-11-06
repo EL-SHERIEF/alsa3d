@@ -39,9 +39,9 @@ export default function Values() {
         ],
       };
   return (
-    <section className="py-16 mx-auto sm:py-20" >
+    <section className="py-20 mx-auto" >
 
-<div className="mb-16">
+<div className="mb-8 sm:mb-16">
 
 <h2 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>قيمنا</h2>
       <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
@@ -52,7 +52,7 @@ export default function Values() {
     
     
     
-        <div className="px-6 group relative w-full  h-[500px]"  dir="rtl">
+        <div className="px-6 group relative w-full  h-[410px] sm:h-[500px]"  dir="rtl">
         <div className="w-[96%] h-full absolute left-0 top-0 group-hover:scale-x-0 group-hover:opacity-0 z-10 duration-300 scale-x-100 ease-in-out px-10 py-10 rounded-2xl flex flex-col justify-between items-start shadow-xl overflow-hidden">
 <div className="flex flex-col justify-start items-start gap-3 z-1">
 <Image src={people} width={500} height={500} className="absolute z-0 left-0 top-0 w-full h-full object-cover" loading="lazy" placeholder="blur" alt="abo hassan"/>
@@ -93,7 +93,7 @@ export default function Values() {
 
 
       
-       <div className="px-6 group relative w-full  h-[500px]"  dir="rtl">
+       <div className="px-6 group relative w-full  h-[410px] sm:h-[500px]"  dir="rtl">
         <div className="w-[96%] h-full absolute left-0 top-0 group-hover:scale-x-0 group-hover:opacity-0 z-10 duration-300 scale-x-100 ease-in-out px-10 py-10 rounded-2xl flex flex-col justify-between items-start shadow-xl overflow-hidden">
 <div className="flex flex-col justify-start items-start gap-3 z-1">
 <Image src={purpose} width={500} height={500} className="absolute z-0 left-0 top-0 w-full h-full object-cover" alt="abo hassan" placeholder="blur" loading="lazy"/>
@@ -131,7 +131,7 @@ export default function Values() {
        </div>
    
 
-       <div className="px-6 group relative w-full  h-[500px]"  dir="rtl">
+       <div className="px-6 group relative w-full  h-[410px] sm:h-[500px]"  dir="rtl">
         <div className="w-[96%] h-full absolute left-0 top-0 group-hover:scale-x-0 group-hover:opacity-0 z-10 duration-300 scale-x-100 ease-in-out px-10 py-10 rounded-2xl flex flex-col justify-between items-start shadow-xl overflow-hidden">
 <div className="flex flex-col justify-start items-start gap-3 z-1">
 <Image src={preformance} width={500} height={500} className="absolute z-0 left-0 top-0 w-full h-full object-cover" alt="abo hassan" loading="lazy" placeholder="blur"/>

@@ -74,8 +74,8 @@ export default function Testimonials() {
     };
 
     return (
-        <div className='my-20'>
-            <div className='flex flex-col text-center relative my-14'>
+        <div className='my-24 sm:my-20'>
+            <div className='flex flex-col text-center relative my-8 sm:my-14'>
                 <h2 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>
                   رأيكم بنا
                 </h2>
