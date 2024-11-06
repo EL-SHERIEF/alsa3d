@@ -12,7 +12,7 @@ export default function Safety() {
 
   return (
 <div className="mb-32">
-<div className="mb-16">
+<div className="mb-8 sm:mb-16">
   <h2 className="bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold">الامان</h2>
   <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
     سلامتك هي اولويتنا
@@ -44,7 +44,7 @@ export default function Safety() {
             <div className="mt-10 flex items-center justify-center gap-x-3 lg:justify-start">
               <Link
                 href="https://wa.me/966594740105?text=الحجز"
-                className="rounded-xl bg-custom-gradient py-4 px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold sm:my-0 my-10"
+                className="rounded-xl bg-custom-gradient py-3 sm:py-4 px-5 sm:px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold sm:my-0 my-10"
               >
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.2" stroke="currentColor" className="size-5">
              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -53,7 +53,7 @@ export default function Safety() {
               </Link>
               <Link
                 href="https://wa.me/966594740105?text=ما%20هي%20تدابير%20السلامة"
-                className="rounded-xl py-2 px-5 shadow-sm text-neutral-900 w-fit flex flex-row gap-1 items-center font-bold hover:underline"
+                className="rounded-xl py-2 px-0 sm:px-5 shadow-sm text-neutral-900 w-fit flex flex-row gap-1 items-center font-bold hover:underline"
               >
               اعرفي عن تدابير السلامة
               </Link>
