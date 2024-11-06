@@ -5,9 +5,6 @@ import {
   WrenchScrewdriverIcon,
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import frame1 from "../../frame1.jpg"
-import frame2 from "../../frame2.jpg"
-import frame3 from "../../frame3.jpg"
 import people from "../../people.jpg"
 import purpose from "../../purpose.jpg"
 import preformance from "../../preformance.jpg"

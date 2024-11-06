@@ -2,10 +2,10 @@
 import Link from "next/link"
 import { useRef } from 'react';
 import Image from "next/image"
-import frame1 from "../../frame1.jpg"
-import frame2 from "../../frame2.jpg"
-import frame3 from "../../frame3.jpg"
-import frame4 from "../../frame4.jpg"
+import frame1 from "../../frame1.webp"
+import frame2 from "../../frame2.webp"
+import frame3 from "../../frame3.webp"
+import frame4 from "../../frame4.webp"
 import { PhoneIcon } from '@heroicons/react/24/solid'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import Slider from 'react-slick';
