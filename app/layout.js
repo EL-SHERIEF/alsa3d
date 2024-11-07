@@ -35,6 +35,7 @@ export const metadata = {
   openGraph: {
     title: 'ابو حســن | احسن طريقة تداومي بيها',
     description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",
+    keywords: "توصيل كلية التقنية, توصيل كلية التقنية بالرياض, توصيل كلية التقنية والكلية الرقمية بالرياض",
     url: 'https://abohassan.vercel.app/',
     siteName: 'ابو حســن',
     images: [
