@@ -236,7 +236,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="rtl">
+    <html lang="ar" dir="rtl">
       <body className={`${almarai.variable} antialiased`}>
         <Header />
         {children}
