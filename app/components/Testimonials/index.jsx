@@ -15,7 +15,7 @@ export default function Testimonials() {
             title: "طالبة بكلية التقنية للبنات",
         },
         {
-            quote: "صدق انا فخورة فيكم",
+            quote: "صدق فخورة فيكم",
             name: "نهال محمد",
             title: "موظفة",
         },
