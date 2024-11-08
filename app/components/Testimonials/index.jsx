@@ -16,7 +16,7 @@ export default function Testimonials() {
         },
         {
             quote: "صدق فخورة فيكم",
-            name: "نهال محمد",
+            name: "نهال حمدي",
             title: "موظفة",
         },
         {
