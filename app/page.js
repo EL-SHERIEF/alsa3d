@@ -21,7 +21,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "ابو حســن",
-              "description": "خدمة توصيل آمنة لكلية التقنية والكلية الرقمية بالرياض",
+              "description": "خدمة توصيل لكلية التقنية و توصيل الكلية الرقمية بالرياض",
               "url": "https://abohassan.vercel.app/",
               "contactPoint": {
                 "@type": "ContactPoint",
