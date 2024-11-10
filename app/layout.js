@@ -28,11 +28,13 @@ const almarai = localFont({
   ],
   variable: "--font-almarai",
 });
+const today = new Date().toISOString();
 
 export const metadata = {
-  title: "ابو حســن | توصيل طالبات, توصيل موظفات بكل امان",
+  title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
   description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة, توصيل طالبات كلية التقنية وتوصيل الكلية الرقمية في الرياض #حضورك_مهمتنا",
   referrer: 'origin-when-cross-origin',
+  canonical:'https://abohassan.vercel.app/',
   keywords: [
     'خدمة توصيل طالبات بالرياض',
     'توصيل طالبات في حي طويق',
@@ -77,7 +79,9 @@ export const metadata = {
     locale: 'ar_SA',
     type: 'website',
   },
-
+  article: {
+    modified_time: today, 
+  },
 };
 
 export default function RootLayout({ children }) {

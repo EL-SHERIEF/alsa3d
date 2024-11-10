@@ -3,7 +3,7 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://abohasan.com/sitemap.xml
+Sitemap: https://abohassan.vercel.app/sitemap.xml
 
 # Ensure no crawl-delay (for rapid indexing where applicable)
 Crawl-delay: 1

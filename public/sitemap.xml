@@ -8,12 +8,12 @@
 
     <!-- Homepage with image -->
     <url>
-        <loc>https://abohasan.com/</loc>
+        <loc>https://abohassan.vercel.app/</loc>
         <lastmod>2024-11-06T06:28:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://abohasan.com/opengraph-image.jpg</image:loc>
+            <image:loc>https://abohassan.vercel.app/opengraph-image.jpg</image:loc>
         </image:image>
     </url>
 
