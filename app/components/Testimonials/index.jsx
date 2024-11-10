@@ -20,6 +20,11 @@ export default function Testimonials() {
             title: "موظفة",
         },
         {
+            quote: "شيء لاحظته فيكم مادري اذا يفيد او لا بس سياراتكم نظيفة ذا اكثر شي عجبني",
+            name: "Asmaa Alzubaidi",
+            title: "مهندسة تقنية",
+        },
+        {
             quote: "تحياتي لاجمل خدمة توصيل بالمملكة كلها ✨",
             name: "Razan Alyoubi",
             title: "طالبة بكلية التقنية",
