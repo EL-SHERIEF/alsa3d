@@ -12,3 +12,10 @@
     margin-top: 40px;
     margin-bottom: 20px;
 }
+.body a{
+    color: rgb(0, 106, 255);
+    font-weight: 800;padding: 0 20px;   transition: .2s color;
+}
+.body a:hover{text-decoration: underline;
+    color: rgb(72, 0, 255);
+}
