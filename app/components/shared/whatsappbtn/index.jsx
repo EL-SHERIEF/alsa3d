@@ -27,9 +27,9 @@ export default function WaBtn({ link }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* WhatsApp Icon */}
-      <Link
-        className="rounded-full bg-[#00FF1E] p-4 text-black flex items-center justify-center mx-4"
-        href={whatsAppLink}
+      <div
+        className="rounded-full bg-[#00FF1E] p-4 text-black flex items-center justify-center me-4"
+
         target="_blank"
       >
         <Image
@@ -39,7 +39,7 @@ export default function WaBtn({ link }) {
           height={30}
           alt="WhatsApp"
         />
-      </Link>
+      </div>
 
       {/* Message Input and Send Arrow (Appears on Hover or if Message has Text) */}
       <div
