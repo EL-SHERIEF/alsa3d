@@ -18,11 +18,11 @@ const slides = [
     tag: "مهمتنا",
     linkText: "احجزي سيارتك",
     linkHref: "https://wa.me/966594740105?text=اشتراك",
-    alt: "ما في احسن من وسيلة مرتبة وامنة ومريحة نداوم بيها كل يوم"
+    alt: "خدمات توصيل الطالبات من الكلية الرقمية الى اي مكان"
   },
   {
     image: frame4,
-    title: "ادعمي مجتمع المرأة السعودية القوية",
+    title: " ادعمي مجتمع المرأة السعودية القوية نسعى جاهدين في ابو حسن لخدمات نقل افضل",
     tag: "مجتمعنا",
     linkText: "كوني انتي المجتمع",
     linkHref: "https://wa.me/966594740105?text=اضفني_للمجموعة",
@@ -30,7 +30,7 @@ const slides = [
   },
   {
     image: frame1,
-    title: "نحن نحارب الصعوبات بك ولاجلك وننشر الايجابية في كل المجتمعات",
+    title: "خدمات نقل مريحة و امنة, ابو حسن لتوصيل طالبات الكليات والموظفات",
     tag: "مهمتنا",
     linkText: "انضمي لنا",
     linkHref: "https://wa.me/966594740105?text=اشتراك",
@@ -78,8 +78,8 @@ export default function Hero() {
            <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full z-0">
             <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75} alt="انضمي لنا"/></div>
            <div className="mx-1 md:mx-5 w-[90%] md:max-w-4xl ps-5 pb-5 md:ps-10 md:pb-10 z-10 flex flex-col gap-[2px] sm:gap-2 items-start">
-                         <span className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</span>
-                         <span className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</span>
+                         <h4 className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</h4>
+                         <h1 className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</h1>
                          <div className="z-10 my-4 flex flex-row gap-[10px]">
                          <Link className='rounded-xl bg-custom-gradient py-4 px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold' href={slide.linkHref} target="_blank">{slide.linkText}
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.2" stroke="currentColor" className="size-5">
