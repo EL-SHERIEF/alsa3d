@@ -22,7 +22,7 @@ export default function WaBtn({ link }) {
 
   return (
     <div
-      className="fixed right-4 bottom-4 flex items-center space-x-2 z-10"
+      className="fixed right-2 sm:right-4 bottom-4 flex items-center space-x-2 z-10"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

@@ -28,7 +28,7 @@ export default function Values() {
               infinite: true,
     autoplay: true,
     pauseOnHover: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2300,
     cssEase: 'ease-in-out',
               slidesToShow: 1,
               slidesToScroll: 1,
