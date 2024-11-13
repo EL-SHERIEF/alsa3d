@@ -17,7 +17,6 @@ export default async function Home() {
     
   return (
     <>
-      
       <Hero />
       <Stats />
       <Bento />
