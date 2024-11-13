@@ -56,8 +56,8 @@ export default function BlogSlider({ data, title }) {
                                 )}
                                 {/* Blog Title */}
                                 
-                                <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9 mt-3 ">
-                                    <p>{post.title}</p>
+                                <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-1xl/8 mt-3 line-clamp-2">
+                                    <h1>{post.title}</h1>
                                 </blockquote>
                                 <div className="text-center text-sm text-gray-600 mt-2">
                                         {new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}

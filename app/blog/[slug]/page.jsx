@@ -24,6 +24,7 @@ export async function generateMetadata(props) {
     openGraph: {
       title: post.title,
       description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
+      keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
       url: `https://abohassan.vercel.app/blog/${slug}`,
       images: [
         {
@@ -54,7 +55,7 @@ export default async function PostPage(props) {
       </div>
       <div className='px-12 sm:px-24 py-16 bg-green-100 rounded-3xl mt-4 text-start text-base'>
       <h1 className='text-center text-2xl sm:text-3xl font-black'>{post.title}</h1>
-      <h2 className='text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white'>{new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}</h2>
+      <h2 className='!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white'>{new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}</h2>
       <div className='my-12'>
       <PortableText value={post.body} />
       <div className='w-full flex flex-wrap justify-center items-start flex-row gap-2 my-16'>

@@ -4,7 +4,7 @@ import Header from "./components/header";
 import PrelineScript from "./components/PrelineScript";
 import Head from 'next/head';
 import Footer from "./components/Footer";
-
+import WaBtn from "./components/shared/whatsappbtn";
 const almarai = localFont({
   src: [
     {
@@ -115,6 +115,7 @@ export default function RootLayout({ children }) {
       <body className={`${almarai.variable} antialiased`}>
         <Header />
         {children}
+         <WaBtn link={'https://wa.me/966594740105'} text={'تواصل معنا'}/>
         <Footer />
         <PrelineScript />
       </body>
