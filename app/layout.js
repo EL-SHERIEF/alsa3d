@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header";
 import PrelineScript from "./components/PrelineScript";
+import Head from 'next/head';
+import Footer from "./components/Footer";
 
 const almarai = localFont({
   src: [
@@ -52,7 +54,7 @@ export const metadata = {
 ,  
   
   openGraph: {
-    title: 'ابو حســن | احسن طريقة تداومي بيها',
+    title: 'احسن طريقة تداومي بيها',
     description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",
     url: 'https://abohassan.vercel.app/',
     siteName: 'ابو حســن',
@@ -87,9 +89,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
+      <Head>
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "ابو حســن",
+              "description": "خدمة توصيل لكلية التقنية و توصيل الكلية الرقمية بالرياض",
+              "url": "https://abohassan.vercel.app/",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+966 59 474 0105",
+                "contactType": "Customer Service",
+                "areaServed": "SA",
+                "availableLanguage": ["Arabic"]
+              }
+            })
+          }} 
+        />
+      </Head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
         <PrelineScript />
       </body>
     </html>

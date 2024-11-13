@@ -10,6 +10,8 @@ declare global {
   }
 }
 
+/*************  ✨ Codeium Command ⭐  *************/
+/******  20302648-6959-4f3f-a7b9-1871898fe0ff  *******/
 export default function PrelineScript() {
   const path = usePathname();
 

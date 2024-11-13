@@ -26,9 +26,9 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
 <nav className={isScrolled ? styles.header : styles.header2}>
         <div className="px-4 md:px-0 flex justify-between items-center">
-        <div className='lg:mx-3'>
+        <Link href="/" className='lg:mx-3'>
       <Image src={logo} width={120} height={120} alt='AboHassan'/>
-        </div>
+        </Link>
   
         <div className="md:hidden">
           <button type="button" className="hs-collapse-toggle flex justify-center items-center size-6 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-navbar-header-floating-collapse" aria-expanded="false" aria-controls="hs-navbar-header-floating" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-header-floating">
