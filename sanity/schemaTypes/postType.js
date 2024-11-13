@@ -1,5 +1,5 @@
-import {DocumentTextIcon} from '@sanity/icons'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import { DocumentTextIcon } from '@sanity/icons';
+import { defineArrayMember, defineField, defineType } from 'sanity';
 
 export const postType = defineType({
   name: 'post',
@@ -18,7 +18,6 @@ export const postType = defineType({
         source: 'title',
       },
     }),
-  
     defineField({
       name: 'mainImage',
       type: 'image',
@@ -30,12 +29,26 @@ export const postType = defineType({
           name: 'alt',
           type: 'string',
           title: 'Alternative text',
-        }
-      ]
+        },
+      ],
     }),
     defineField({
       name: 'body',
       type: 'blockContent',
+    }),
+    // Add the keywords field for SEO purposes
+    defineField({
+      name: 'keywords',
+      title: 'Keywords',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'string',
+        }),
+      ],
+      options: {
+        layout: 'tags',
+      },
     }),
   ],
   preview: {
@@ -45,4 +58,4 @@ export const postType = defineType({
       media: 'mainImage',
     },
   },
-})
+});
