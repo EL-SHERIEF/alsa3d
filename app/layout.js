@@ -34,9 +34,11 @@ const today = new Date().toISOString();
 
 export const metadata = {
   title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+  
   description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة, توصيل طالبات كلية التقنية وتوصيل الكلية الرقمية في الرياض #حضورك_مهمتنا",
   referrer: 'origin-when-cross-origin',
   canonical:'https://abohassan.vercel.app/',
+  siteName: 'ابو حســن',
   keywords: [
     'خدمة توصيل طالبات بالرياض',
     'توصيل طالبات في حي طويق',
@@ -54,7 +56,7 @@ export const metadata = {
 ,  
   
   openGraph: {
-    title: 'احسن طريقة تداومي بيها',
+    title: 'ابو حسن | توصيل الكلية التقنية و توصيل الكلية الرقمية',
     description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",
     url: 'https://abohassan.vercel.app/',
     siteName: 'ابو حســن',

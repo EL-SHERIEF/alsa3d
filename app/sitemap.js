@@ -7,7 +7,7 @@ export default async function sitemap() {
         {
             url: `${baseUrl}`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
+            changeFrequency: 'daily',
             priority: 1,
         },
         ...posts.map((post) => ({
