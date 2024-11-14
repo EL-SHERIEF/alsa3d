@@ -74,7 +74,7 @@ export default function Hero() {
     <div className="w-[93vw] md:w-[97vw] mx-auto h-[26rem] md:h-[calc(100vh-106px)] relative mt-14 md:mt-16 overflow-hidden rounded-xl">
       <Slider {...settings} ref={sliderRef}>
         {slides.map((slide, index) => (
-           <div  itemscope itemtype="https://schema.org/Service"  key={index} dir="rtl" className=" h-[26rem] md:h-[calc(100vh-106px)]  w-full !flex flex-col !relative justify-end items-start">
+           <div  itemScope itemtype="https://schema.org/Service"  key={index} dir="rtl" className=" h-[26rem] md:h-[calc(100vh-106px)]  w-full !flex flex-col !relative justify-end items-start">
            <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full z-0">
             <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75}  itemProp="image" alt="انضمي لنا"/>
             </div>
