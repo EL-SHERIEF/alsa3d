@@ -46,7 +46,7 @@ export default async function PostPage(props) {
   const post = await getPostBySlug(decodedSlug);
   const posts = await getPosts();
   return (
-        <div className={styles.body}>
+    <>
               <article className='w-[95%] sm:w-[80%] relative mx-auto mt-[65px]'>
       <div className='p-5 bg-green-100 w-full h-[600px] overflow-hidden rounded-3xl'>
       {post.mainImage && (
@@ -57,10 +57,12 @@ export default async function PostPage(props) {
       <h1 className='text-center text-2xl sm:text-3xl font-black'>{post.title}</h1>
       <h2 className='!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white'>{new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}</h2>
       <div className='my-12'>
+      <div className={styles.body}>
       <PortableText value={post.body} />
+      </div>
       <div className='w-full flex flex-wrap justify-center items-start flex-row gap-2 my-16'>
       {post.keywords.map((keyword) => (
-           <h1 key={keyword} className='px-4 py-1 bg-neutral-600 rounded-full font-bold text-white text-xs'>
+           <h1 key={keyword} className='px-4 py-1 bg-neutral-600 rounded-full font-bold text-white !text-xs !m-0'>
              {keyword}
            </h1>
           ))}
@@ -70,7 +72,7 @@ export default async function PostPage(props) {
       
     </article>
     <BlogSlider data={posts} title='قد يعجبك ايضا'/>
-        </div>
-
+       
+</>
   );
 }
