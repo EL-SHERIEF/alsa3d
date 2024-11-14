@@ -12,7 +12,7 @@ export default function BlogSlider({ data, title }) {
         pauseOnHover: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         cssEase: 'linear',
         arrows: false,
         speed: 500,
@@ -23,7 +23,7 @@ export default function BlogSlider({ data, title }) {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
-                    autoplaySpeed: 2600,
+                    autoplaySpeed: 3600,
                     slidesToScroll: 1,
                 },
             },
