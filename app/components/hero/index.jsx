@@ -15,7 +15,7 @@ const slides = [
   {
     image: frame2,
     title: "حضورك مهمتنا, نحن نحرص على حضورك الدوام بكل راحة وامان",
-    tag: "مهمتنا",
+    tag: "توصيل طالبات كلية التقنية",
     linkText: "احجزي سيارتك",
     linkHref: "https://wa.me/966594740105?text=اشتراك",
     alt: "خدمات توصيل الطالبات من الكلية الرقمية الى اي مكان"
@@ -23,7 +23,7 @@ const slides = [
   {
     image: frame4,
     title: " ادعمي مجتمع المرأة السعودية القوية نسعى جاهدين في ابو حسن لخدمات نقل افضل",
-    tag: "مجتمعنا",
+    tag: "توصيل طالبات الكلية الرقمية",
     linkText: "كوني انتي المجتمع",
     linkHref: "https://wa.me/966594740105?text=اضفني_للمجموعة",
     alt: "كوني انتي المجتمع"
@@ -31,18 +31,18 @@ const slides = [
   {
     image: frame1,
     title: "خدمات نقل مريحة و امنة, ابو حسن لتوصيل طالبات الكليات والموظفات",
-    tag: "مهمتنا",
+    tag: "توصيل الكلية الرقمية",
     linkText: "انضمي لنا",
     linkHref: "https://wa.me/966594740105?text=اشتراك",
-    alt: "انضمي لنا"
+    alt: "توصيل طالبات كلية التقنية والكلية الرقمية"
   },
   {
     image: frame3,
     title: "لان السائق هوا من يجعل الرحلة مناسبة ضممنا مجموعة من امهر سائقين المملكة",
-    tag: "مهمتنا",
+    tag: "توصيل كلية الرقمية",
     linkText: "اشتركي الان بكل بساطة",
     linkHref: "https://wa.me/966594740105?text=اشتراك",
-    alt: "مهمتنا"
+    alt: "سائقين الكلية الرقمية"
   },
 ];
 
@@ -74,14 +74,15 @@ export default function Hero() {
     <div className="w-[93vw] md:w-[97vw] mx-auto h-[26rem] md:h-[calc(100vh-106px)] relative mt-14 md:mt-16 overflow-hidden rounded-xl">
       <Slider {...settings} ref={sliderRef}>
         {slides.map((slide, index) => (
-           <div key={index} dir="rtl" className=" h-[26rem] md:h-[calc(100vh-106px)]  w-full !flex flex-col !relative justify-end items-start">
+           <div  itemscope itemtype="https://schema.org/Service"  key={index} dir="rtl" className=" h-[26rem] md:h-[calc(100vh-106px)]  w-full !flex flex-col !relative justify-end items-start">
            <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full z-0">
-            <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75} alt="انضمي لنا"/></div>
+            <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75}  itemprop="image" alt="انضمي لنا"/>
+            </div>
            <div className="mx-1 md:mx-5 w-[90%] md:max-w-4xl ps-5 pb-5 md:ps-10 md:pb-10 z-10 flex flex-col gap-[2px] sm:gap-2 items-start">
-                         <h4 className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</h4>
-                         <h1 className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</h1>
+                         <h4 itemprop="name"  className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</h4>
+                         <h1 itemprop="description"  className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</h1>
                          <div className="z-10 my-4 flex flex-row gap-[10px]">
-                         <Link className='rounded-xl bg-custom-gradient py-4 px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold' href={slide.linkHref} target="_blank">{slide.linkText}
+                         <Link itemprop="url" className='rounded-xl bg-custom-gradient py-4 px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold' href={slide.linkHref} target="_blank">{slide.linkText}
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.2" stroke="currentColor" className="size-5">
              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
            </svg>
