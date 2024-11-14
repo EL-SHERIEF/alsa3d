@@ -91,7 +91,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <Head>
+   <Head>
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{
@@ -107,6 +107,11 @@ export default function RootLayout({ children }) {
                 "contactType": "Customer Service",
                 "areaServed": "SA",
                 "availableLanguage": ["Arabic"]
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "98"
               }
             })
           }} 
