@@ -36,9 +36,7 @@ export const metadata = {
     url: 'https://abohassan.vercel.app/',
     siteName: 'ابو حســن',
     images: [
-      { url: '/opengraph-image.jpg', width: 200, height: 150, alt: "خدمة التوصيل الموسمي الأعلى أمانًا" },
-      { url: '/opengraph-image.jpg', width: 800, height: 600, alt: "خدمة التوصيل الموسمي الأعلى أمانًا" },
-      { url: '/opengraph-image.jpg', width: 1800, height: 1600, alt: '"خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",' },
+      { url: '/opengraph-image.jpg', width: 1200, height: 630, alt: "خدمة التوصيل الموسمي الأعلى أمانًا" },
     ],
     locale: 'ar_SA',
     type: 'website',
@@ -66,7 +64,8 @@ export default function RootLayout({ children }) {
                 "@type": "PostalAddress",
                 "addressLocality": "الرياض",
                 "addressRegion": "منطقة الرياض",
-                "addressCountry": "SA"
+                "addressCountry": "SA",
+                "streetAddress": "طويق، محافظة الرياض السعودية" // replace with actual street if possible
               },
               "openingHours": "Mo-Fr 06:00-18:00",
               "contactPoint": {
@@ -81,7 +80,9 @@ export default function RootLayout({ children }) {
                 "ratingValue": "4.9",
                 "reviewCount": "150"
               },
-              "image": "https://abohassan.vercel.app/opengraph-image.jpg"
+              "image": [
+                "https://abohassan.vercel.app/opengraph-image.jpg"
+              ]
             })
           }} 
         />
