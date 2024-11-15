@@ -6,7 +6,6 @@ import { PhoneIcon } from '@heroicons/react/24/solid'
 import styles from './styles.module.css'
 import { useState, useEffect } from 'react';
 import Button from '../shared/button'
-import Link from 'next/link'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
