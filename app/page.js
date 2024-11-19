@@ -13,7 +13,7 @@ const today = new Date().toISOString();
 
 // Metadata following Next.js conventions and SEO best practices
 export const metadata = {
-  title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+  title: "ابو حســن - توصيل الكلية التقنية و توصيل الكلية الرقمية",
   description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة, توصيل طالبات كلية التقنية وتوصيل الكلية الرقمية في الرياض #حضورك_مهمتنا",
   keywords: [
     "خدمة توصيل طالبات بالرياض", "توصيل طالبات في حي طويق", "توصيل طالبات حي العوالي بالرياض",
@@ -43,7 +43,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "https://abohassan.vercel.app/", // Replace with the actual handle
-    title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+    title: "ابو حســن - توصيل الكلية التقنية و توصيل الكلية الرقمية",
     description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة",
     images: ["https://abohassan.vercel.app/opengraph-image.jpg"],
   },
