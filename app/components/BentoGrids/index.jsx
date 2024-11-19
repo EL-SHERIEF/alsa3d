@@ -22,11 +22,12 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88] lg:rounded-l-[2rem]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-              <p className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">
               سهولة الحجز والإشتراك
-              </p>
+              </h1>
               <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-             احجزي في اي وقت بكل سهولة وبدون تعقيدات, سواء اذا كنتي طالبة او موظفة اشتراكنا بيكون مناسب لكي         </h1>
+             احجزي في اي وقت بكل سهولة وبدون تعقيدات, سواء اذا كنتي طالبة او موظفة اشتراكنا بيكون مناسب لكي وفي متناول الجميع
+             </h1>
             </div>
             <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-custom-gradient  shadow-2xl">
@@ -47,9 +48,9 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88] max-lg:rounded-t-[2rem]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-              <p className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات مكيفة ومريحة</p>
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات مكيفة ومريحة</h1>
               <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-              أسطولنا يضم سيارات هيونداي اتش وان المكيفة والمزودة بخدمات الواي فاي وأنظمة حديثة، لتوفير راحة كاملة خلال الرحلة وجعل التنقل تجربة ممتعة وآمنة.
+               أسطولنا يضم سيارات هيونداي اتش وان  وجميع السيارات مكيفة مع امكانية تزويد سيارة لكل رحلة, من مميزات سياراتنا ايضا انها مزودة بخدمات عديدة منها شبكة واي فاي مجانا وأنظمة حديثة، لتوفير راحة كاملة خلال الرحلة وجعل التنقل تجربة ممتعة وآمنة. 
               </h1>
             </div>
             <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 sm:px-10">
@@ -69,9 +70,9 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-              <p className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">نظام امان والتزام بالمواعيد</p>
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">نظام امان والتزام فى المواعيد              </h1>
               <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-              نظام صارم يضمن لكي امان تام ومواعيد حادة لا يمكن التأخر عنها في اي حال من الاحوال, بالأضافة الى التزام سائقينا المؤهلين بكل بنود الأمان والسلامة
+              نظام صارم يضمن لكي امان تام ومواعيد حادة لا يمكن التأخر عنها في اي حال من الاحوال, بالأضافة الى سائقين مدربين على اعلى مستوى و مؤهلين بكل بنود الأمان والسلامة
               </h1>
             </div>
             <div className="flex flex-1 items-center justify-center w-full [container-type:inline-size] max-lg:py-6 pb-3">
@@ -91,9 +92,9 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88] max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-              <p className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center ">
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center ">
               اسعار مناسبة للكل بجودة افضل وكفاءة اعلى
-</p>
+</h1>
               <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
               أسعار تنافسية تراعي احتياجات الطالبات والموظفات، مع الحفاظ على جودة الخدمة وثبات السعر مقارنة بالمميزات
               </h1>
