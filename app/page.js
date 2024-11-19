@@ -55,6 +55,9 @@ export const metadata = {
   article: {
     modified_time: today,
   },
+  alternates: {
+    canonical: `https://abohassan.vercel.app/`,
+}
 };
 
 export default async function Home() {

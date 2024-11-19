@@ -60,6 +60,9 @@ export async function generateMetadata(props) {
       author: post.author?.name || "أبو حسن",
       tags: post.keywords || [],
     },
+    alternates: {
+      canonical: `https://abohassan.vercel.app/blog/${slug}`,
+  }
   };
 }
 
