@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "ابو حســن",
     images: [
       {
-        url: "/opengraph-image.jpg",
+        url: "https://abohassan.vercel.app/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "خدمة التوصيل الموسمي الأعلى أمانًا",
@@ -45,7 +45,7 @@ export const metadata = {
     site: "https://abohassan.vercel.app/", // Replace with the actual handle
     title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
     description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة",
-    images: ["/opengraph-image.jpg"],
+    images: ["https://abohassan.vercel.app/opengraph-image.jpg"],
   },
   additionalMetaTags: [
     { name: "author", content: "ابو حســن" },

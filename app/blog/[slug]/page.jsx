@@ -49,7 +49,7 @@ export async function generateMetadata(props) {
       description: post.excerpt || excerpt || "أبو حسن لتوصيل الكلية التقنية والكلية الرقمية",
       images: [
         {
-          url: post.mainImage?.asset?.url || "/opengraph-image.jpg",
+          url: post.mainImage?.asset?.url || "https://abohassan.vercel.app/opengraph-image.jpg",
           alt: post.title || "أبو حسن",
         },
       ],
