@@ -16,10 +16,16 @@ export async function generateMetadata(props) {
   const rawBodyText = post.body.map(block => block.children.map(child => child.text).join(" ")).join(" ");
   const simplifiedText = rawBodyText.replace(/<[^>]+>/g, "");
   const excerpt = simplifiedText.substring(0, 160);
+  const today = new Date().toISOString();
+
   return {
     title: `${post.title} - ابو حســن`,
     description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
     keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
+    referrer: 'origin-when-cross-origin',
+    siteName: 'ابو حســن',
+    locale: 'ar_SA',
+    type: 'website',
     openGraph: {
       title: post.title,
       description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
@@ -33,6 +39,13 @@ export async function generateMetadata(props) {
           alt: post.title,
         },
       ],
+      siteName: 'ابو حســن',
+      locale: 'ar_SA',
+      type: 'website',
+      
+    },
+    article: {
+      modified_time: today,
     },
   };
 }
