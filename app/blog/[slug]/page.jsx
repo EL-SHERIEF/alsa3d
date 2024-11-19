@@ -44,6 +44,7 @@ export async function generateMetadata(props) {
     },
     twitter: {
       card: "summary_large_image",
+      site:"https://abohassan.vercel.app/",
       title: post.title,
       description: post.excerpt || excerpt || "أبو حسن لتوصيل الكلية التقنية والكلية الرقمية",
       images: [

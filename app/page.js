@@ -42,7 +42,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@YourTwitterHandle", // Replace with the actual handle
+    site: "https://abohassan.vercel.app/", // Replace with the actual handle
     title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
     description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة",
     images: ["/opengraph-image.jpg"],
