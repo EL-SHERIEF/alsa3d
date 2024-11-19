@@ -25,7 +25,7 @@ export const metadata = {
   robots: "index, follow", // Ensures search engines can index and follow links
   canonical: "https://abohassan.vercel.app/",
   openGraph: {
-    title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+    title: "ابو حســن - توصيل طالبات الكلية التقنية و توصيل طالبات الكلية الرقمية",
     description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة #حضورك_مهمتنا",
     url: "https://abohassan.vercel.app/",
     siteName: "ابو حســن",
