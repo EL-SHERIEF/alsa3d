@@ -5,6 +5,7 @@ import PrelineScript from "./components/PrelineScript";
 import Head from 'next/head';
 import Footer from "./components/Footer";
 import WaBtn from "./components/shared/whatsappbtn";
+import { Analytics } from "@vercel/analytics/react"
 
 const almarai = localFont({
   src: [
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <WaBtn link={'https://wa.me/966594740105'}/>
         <Footer />
         <PrelineScript />
+        <Analytics/>
       </body>
     </html>
   );
