@@ -1,3 +1,4 @@
+// src/app/blog/[slug]/page.jsx
 import Script from "next/script";
 import { getPostBySlug } from '../../lib/api';
 import Image from 'next/image';
@@ -7,33 +8,58 @@ import { getPosts } from '../../lib/api';
 import styles from './styles.module.css';
 import Head from "next/head";
 
+
+export async function generateMetadata(props) {
+  const params = await props.params;
+  const { slug } = params;
+  const decodedSlug = decodeURIComponent(slug);
+  const post = await getPostBySlug(decodedSlug);
+
+  const rawBodyText = post.body.map(block => block.children.map(child => child.text).join(" ")).join(" ");
+  const simplifiedText = rawBodyText.replace(/<[^>]+>/g, "");
+  const excerpt = simplifiedText.substring(0, 160);
+  const today = new Date().toISOString();
+
+  return {
+    title: `${post.title} - ابو حســن`,
+    description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
+    keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
+    referrer: 'origin-when-cross-origin',
+    canonical: `https://abohassan.vercel.app/blog/${slug}`,
+    siteName: 'ابو حســن',
+    locale: 'ar_SA',
+    type: 'website',
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
+      canonical: `https://abohassan.vercel.app/blog/${slug}`,
+      keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
+      url: `https://abohassan.vercel.app/blog/${slug}`,
+      images: [
+        {
+          url: post.mainImage?.asset?.url || "/opengraph-image.jpg",
+          width: 800,
+          height: 600,
+          alt: post.title,
+        },
+      ],
+      siteName: 'ابو حســن',
+      locale: 'ar_SA',
+      type: 'website',
+      
+    },
+    article: {
+      modified_time: today,
+    },
+  };
+}
+
 export default async function PostPage(props) {
   const params = await props.params;
   const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const post = await getPostBySlug(decodedSlug);
   const posts = await getPosts();
-
-  // Generate metadata dynamically
-  const rawBodyText = post.body
-    .map(block => block.children.map(child => child.text).join(" "))
-    .join(" ");
-  const simplifiedText = rawBodyText.replace(/<[^>]+>/g, "");
-  const excerpt = post.excerpt || simplifiedText.substring(0, 160);
-  const today = new Date().toISOString();
-
-  const metadata = {
-    title: `${post.title} - ابو حســن`,
-    description: excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
-    canonical: `https://abohassan.vercel.app/blog/${slug}`,
-    keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
-    og: {
-      title: post.title,
-      description: excerpt,
-      url: `https://abohassan.vercel.app/blog/${slug}`,
-      image: post.mainImage?.asset?.url || "/opengraph-image.jpg",
-    },
-  };
 
   // Generate FAQPage structured data for SEO
   const jsonLd = {
@@ -45,7 +71,7 @@ export default async function PostPage(props) {
         name: post.title,
         acceptedAnswer: {
           "@type": "Answer",
-          text: rawBodyText,
+          text: post.body.map(block => block.children.map(child => child.text).join(" ")).join(" "),
         },
       },
     ],
@@ -53,27 +79,6 @@ export default async function PostPage(props) {
 
   return (
     <>
-      <Head>
-        {/* Basic Metadata */}
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <link rel="canonical" href={metadata.canonical} />
-
-        {/* Open Graph Metadata */}
-        <meta property="og:title" content={metadata.og.title} />
-        <meta property="og:description" content={metadata.og.description} />
-        <meta property="og:url" content={metadata.og.url} />
-        <meta property="og:image" content={metadata.og.image} />
-        <meta property="og:site_name" content="ابو حســن" />
-        <meta property="og:locale" content="ar_SA" />
-        <meta property="og:type" content="website" />
-
-        {/* Additional Metadata */}
-        <meta name="referrer" content="origin-when-cross-origin" />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <Script
         id="faq-schema"
         type="application/ld+json"
@@ -81,25 +86,15 @@ export default async function PostPage(props) {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      
-      {/* Main Article Content */}
       <article className="w-[95%] sm:w-[80%] relative mx-auto mt-[65px]">
         <div className="p-5 bg-green-100 w-full h-[600px] overflow-hidden rounded-3xl">
           {post.mainImage && (
-            <Image
-              className="w-full h-full object-cover rounded-2xl text-neutral-600"
-              src={post.mainImage.asset.url}
-              alt={post.mainImage.alt || 'Blog Image'}
-              width={800}
-              height={500}
-            />
+            <Image className="w-full h-full object-cover rounded-2xl text-neutral-600" src={post.mainImage.asset.url} alt={post.mainImage.alt || 'Blog Image'} width={800} height={500} />
           )}
         </div>
         <div className="px-12 sm:px-24 py-16 bg-green-100 rounded-3xl mt-4 text-start text-base">
           <h1 className="text-center text-2xl sm:text-3xl font-black">{post.title}</h1>
-          <h2 className="!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white">
-            {new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}
-          </h2>
+          <h2 className="!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white">{new Date(post._updatedAt).toLocaleDateString('ar-SA', { dateStyle: 'long' })}</h2>
           <div className="my-12">
             <div className={styles.body}>
               <PortableText value={post.body} />
