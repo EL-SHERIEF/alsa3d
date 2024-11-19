@@ -23,6 +23,7 @@ export async function generateMetadata(props) {
     description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
     keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
     referrer: 'origin-when-cross-origin',
+    canonical: `https://abohassan.vercel.app/blog/${slug}`,
     siteName: 'ابو حســن',
     locale: 'ar_SA',
     type: 'website',
