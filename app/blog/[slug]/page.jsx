@@ -30,6 +30,7 @@ export async function generateMetadata(props) {
     openGraph: {
       title: post.title,
       description: post.excerpt || excerpt || "| ابو حسن لتوصيل الكلية التقنية و توصيل الكلية الرقمية",
+      canonical: `https://abohassan.vercel.app/blog/${slug}`,
       keywords: post.keywords?.join(", ") || "مدونة, توصيل, ابو حســن",
       url: `https://abohassan.vercel.app/blog/${slug}`,
       images: [
