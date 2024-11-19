@@ -9,38 +9,49 @@ import Pricing from "./components/Pricing";
 import BlogSlider from "./components/blog Slider";
 import { getPosts } from './lib/api';
 
-
 const today = new Date().toISOString();
 
+// Metadata following Next.js conventions and SEO best practices
 export const metadata = {
   title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
   description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة, توصيل طالبات كلية التقنية وتوصيل الكلية الرقمية في الرياض #حضورك_مهمتنا",
-  referrer: 'origin-when-cross-origin',
-  canonical: 'https://abohassan.vercel.app/',
-  siteName: 'ابو حســن',
   keywords: [
-    'خدمة توصيل طالبات بالرياض', 'توصيل طالبات في حي طويق', 'توصيل طالبات حي العوالي بالرياض',
-    'توصيل طالبات كلية التقنية', 'توصيل طالبات الكلية الرقمية في الرياض', 'توصيل الطالبات غرب الرياض',
-    'توصيل الطالبات في حي الغروب', 'خدمة توصيل طالبات حي نجم الدين', 'توصيل موظفات غرب الرياض',
-    'توصيل موظفات حي الموسى بالرياض', 'توصيل الطالبات والموظفات في الرياض', 'خدمة توصيل في حي طويق بالرياض'
+    "خدمة توصيل طالبات بالرياض", "توصيل طالبات في حي طويق", "توصيل طالبات حي العوالي بالرياض",
+    "توصيل طالبات كلية التقنية", "توصيل طالبات الكلية الرقمية في الرياض", "توصيل الطالبات غرب الرياض",
+    "توصيل الطالبات في حي الغروب", "خدمة توصيل طالبات حي نجم الدين", "توصيل موظفات غرب الرياض",
+    "توصيل موظفات حي الموسى بالرياض", "توصيل الطالبات والموظفات في الرياض", "خدمة توصيل في حي طويق بالرياض"
   ],
+  referrer: "origin-when-cross-origin",
+  robots: "index, follow", // Ensures search engines can index and follow links
+  canonical: "https://abohassan.vercel.app/",
   openGraph: {
-    keywords: [
-      'خدمة توصيل طالبات بالرياض', 'توصيل طالبات في حي طويق', 'توصيل طالبات حي العوالي بالرياض',
-      'توصيل طالبات كلية التقنية', 'توصيل طالبات الكلية الرقمية في الرياض', 'توصيل الطالبات غرب الرياض',
-      'توصيل الطالبات في حي الغروب', 'خدمة توصيل طالبات حي نجم الدين', 'توصيل موظفات غرب الرياض',
-      'توصيل موظفات حي الموسى بالرياض', 'توصيل الطالبات والموظفات في الرياض', 'خدمة توصيل في حي طويق بالرياض'
-    ],
-    title: 'ابو حسن | توصيل الكلية التقنية و توصيل الكلية الرقمية',
-    description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة#حضورك_مهمتنا",
-    url: 'https://abohassan.vercel.app/',
-    siteName: 'ابو حســن',
+    title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+    description: "خدمة التوصيل الموسمي الأعلى أمانًا في المملكة #حضورك_مهمتنا",
+    url: "https://abohassan.vercel.app/",
+    siteName: "ابو حســن",
     images: [
-      { url: '/opengraph-image.jpg', width: 1200, height: 630, alt: "خدمة التوصيل الموسمي الأعلى أمانًا" },
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "خدمة التوصيل الموسمي الأعلى أمانًا",
+      },
     ],
-    locale: 'ar_SA',
-    type: 'website',
+    locale: "ar_SA",
+    type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@YourTwitterHandle", // Replace with the actual handle
+    title: "ابو حســن | توصيل الكلية التقنية و توصيل الكلية الرقمية",
+    description: "خدمة توصيل الطالبات وتوصيل الموظفات الأعلى أمانًا في المملكة",
+    images: ["/opengraph-image.jpg"],
+  },
+  additionalMetaTags: [
+    { name: "author", content: "ابو حســن" },
+    { name: "theme-color", content: "#ffffff" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+  ],
   article: {
     modified_time: today,
   },
@@ -48,7 +59,7 @@ export const metadata = {
 
 export default async function Home() {
   const posts = await getPosts();
-    
+  
   return (
     <>
       <Hero />
@@ -58,7 +69,7 @@ export default async function Home() {
       <Safety />
       <Testimonials />
       <Pricing />
-      <BlogSlider data={posts} title='المدونة'/>
+      <BlogSlider data={posts} title="المدونة" />
     </>
   );
 }
