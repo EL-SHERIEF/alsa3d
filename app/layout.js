@@ -5,7 +5,8 @@ import PrelineScript from "./components/PrelineScript";
 import Head from 'next/head';
 import Footer from "./components/Footer";
 import WaBtn from "./components/shared/whatsappbtn";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const almarai = localFont({
   src: [
@@ -17,26 +18,10 @@ const almarai = localFont({
   variable: "--font-almarai",
 });
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <Head>
-      <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16770249218"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16770249218');
-            `,
-          }}
-        />
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{
@@ -52,7 +37,7 @@ export default function RootLayout({ children }) {
                 "addressLocality": "الرياض",
                 "addressRegion": "منطقة الرياض",
                 "addressCountry": "SA",
-                "streetAddress": "طويق، محافظة الرياض السعودية" // replace with actual street if possible
+                "streetAddress": "طويق، محافظة الرياض السعودية"
               },
               "openingHours": "Mo-Fr 06:00-18:00",
               "contactPoint": {
@@ -76,11 +61,12 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
+        <GoogleTagManager gtmId="AW-16770249218" />
         {children}
         <WaBtn link={'https://wa.me/966594740105'}/>
         <Footer />
         <PrelineScript />
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );
