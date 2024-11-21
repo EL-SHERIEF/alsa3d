@@ -79,8 +79,8 @@ export default function Hero() {
             <Image src={slide.image} className="left-0 w-full h-full object-cover z-0" fill loading="eager"  placeholder="blur"  quality={75}  itemProp="image" alt="انضمي لنا"/>
             </div>
            <div className="mx-1 md:mx-5 w-[90%] md:max-w-4xl ps-5 pb-5 md:ps-10 md:pb-10 z-10 flex flex-col gap-[2px] sm:gap-2 items-start">
-                         <h4 itemProp="name"  className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</h4>
-                         <h1 itemProp="description"  className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</h1>
+                         <h1 itemProp="name"  className="block text-white z-10 text-[12px] md:text-sm rounded-full border-white border-2 px-4 py-[1px] md:px-6 md:py-1">{slide.tag}</h1>
+                         <h2 itemProp="description"  className="z-10 block text-white text-3xl md:text-5xl/[1.3] font-bold mb-10">{slide.title}</h2>
                          <div className="z-10 my-4 flex flex-row gap-[10px]">
                          <Link itemProp="url" className='rounded-xl bg-custom-gradient py-4 px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold' href={slide.linkHref} target="_blank">{slide.linkText}
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.2" stroke="currentColor" className="size-5">
