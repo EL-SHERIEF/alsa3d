@@ -19,45 +19,43 @@ const almarai = localFont({
 });
 
 export default function RootLayout({ children }) {
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ابو حســن لخدمات توصيل الطالبات والموظفات",
+    "description": "خدمة توصيل كلية التقنية والكلية الرقمية للطالبات والموظفات بأعلى معايير الأمان.",
+    "url": "https://abohassan.vercel.app/",
+    "telephone": "+966 59 474 0105",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الرياض",
+      "addressRegion": "منطقة الرياض",
+      "addressCountry": "SA",
+      "streetAddress": "طويق، محافظة الرياض السعودية"
+    },
+    "openingHours": "Mo-Fr 06:00-18:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+966 59 474 0105",
+      "contactType": "Customer Service",
+      "areaServed": "SA",
+      "availableLanguage": ["Arabic"]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    },
+    "image": [
+      "https://abohassan.vercel.app/opengraph-image.jpg"
+    ]
+  }
   return (
     <html lang="ar" dir="rtl">
       <Head>
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "ابو حســن لخدمات توصيل الطالبات والموظفات",
-              "description": "خدمة توصيل كلية التقنية والكلية الرقمية للطالبات والموظفات بأعلى معايير الأمان.",
-              "url": "https://abohassan.vercel.app/",
-              "telephone": "+966 59 474 0105",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "الرياض",
-                "addressRegion": "منطقة الرياض",
-                "addressCountry": "SA",
-                "streetAddress": "طويق، محافظة الرياض السعودية"
-              },
-              "openingHours": "Mo-Fr 06:00-18:00",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+966 59 474 0105",
-                "contactType": "Customer Service",
-                "areaServed": "SA",
-                "availableLanguage": ["Arabic"]
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "150"
-              },
-              "image": [
-                "https://abohassan.vercel.app/opengraph-image.jpg"
-              ]
-            })
-          }} 
-        />
+           <script type="application/ld+json">
+          {JSON.stringify(articleStructuredData)}
+        </script>
       </Head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
