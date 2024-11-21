@@ -10,7 +10,7 @@ export default function Bento() {
   return (
     <div className="bg-gray-50 py-2 sm:py-8">
     <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 relative">
-      <h2 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</h2>
+      <h3 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</h3>
       <h1 className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
       خدمة النقل الآمنة والمريحة للطالبات والموظفات بالرياض
       </h1>
@@ -25,9 +25,9 @@ export default function Bento() {
               <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">
               سهولة الحجز والإشتراك
               </h1>
-              <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
+              <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
              احجزي في اي وقت بكل سهولة وبدون تعقيدات, سواء اذا كنتي طالبة او موظفة اشتراكنا بيكون مناسب لكي وفي متناول الجميع
-             </h1>
+             </h2>
             </div>
             <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-custom-gradient  shadow-2xl">
@@ -49,9 +49,9 @@ export default function Bento() {
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
               <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات مكيفة ومريحة</h1>
-              <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
+              <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
                أسطولنا يضم سيارات هيونداي اتش وان  وجميع السيارات مكيفة مع امكانية تزويد سيارة لكل رحلة, من مميزات سياراتنا ايضا انها مزودة بخدمات عديدة منها شبكة واي فاي مجانا وأنظمة حديثة، لتوفير راحة كاملة خلال الرحلة وجعل التنقل تجربة ممتعة وآمنة. 
-              </h1>
+              </h2>
             </div>
             <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 sm:px-10">
               <Image
@@ -71,9 +71,9 @@ export default function Bento() {
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
               <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">نظام امان والتزام فى المواعيد              </h1>
-              <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
+              <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
               نظام صارم يضمن لكي امان تام ومواعيد حادة لا يمكن التأخر عنها في اي حال من الاحوال, بالأضافة الى سائقين مدربين على اعلى مستوى و مؤهلين بكل بنود الأمان والسلامة
-              </h1>
+              </h2>
             </div>
             <div className="flex flex-1 items-center justify-center w-full [container-type:inline-size] max-lg:py-6 pb-3">
             <Image
@@ -95,9 +95,9 @@ export default function Bento() {
               <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center ">
               اسعار مناسبة للكل بجودة افضل وكفاءة اعلى
 </h1>
-              <h1 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
+              <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
               أسعار تنافسية تراعي احتياجات الطالبات والموظفات، مع الحفاظ على جودة الخدمة وثبات السعر مقارنة بالمميزات
-              </h1>
+              </h2>
             </div>
             <div className="relative w-full grow">
             <Image
