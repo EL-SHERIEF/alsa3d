@@ -23,6 +23,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <Head>
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16770249218"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16770249218');
+            `,
+          }}
+        />
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{
