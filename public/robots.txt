@@ -1,9 +1,4 @@
-
-# Allow all user-agents to access all content
 User-agent: *
 Disallow:
 
 Sitemap: https://abohassan.vercel.app/sitemap.xml
-
-# Ensure no crawl-delay (for rapid indexing where applicable)
-Crawl-delay: 1
