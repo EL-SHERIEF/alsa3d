@@ -46,13 +46,28 @@ export default function RootLayout({ children }) {
       "areaServed": "SA",
       "availableLanguage": ["Arabic"]
     },
-    "review": {
+    "review": [{
       "@type": "Review",
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": 5,
-        "bestRating": 5
-      }},
+        "ratingValue": 5
+      },
+      "author": {
+        "@type": "Person",
+        "name": "ام عبدالرحمن"
+      }
+     },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5
+      },
+      "author": {
+        "@type": "Person",
+        "name": "امينة المحمدي"
+      }
+    }],
 
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -62,10 +77,6 @@ export default function RootLayout({ children }) {
     "image": [
       "https://abohassan.vercel.app/opengraph-image.jpg"
     ],
-    "author": {
-          "@type": "Person",
-          "name": "Abo Hassan"
-        }
   }
   return (
     <html lang="ar" dir="rtl">
