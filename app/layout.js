@@ -26,6 +26,11 @@ export default function RootLayout({ children }) {
     "description": "خدمة توصيل كلية التقنية والكلية الرقمية للطالبات والموظفات بأعلى معايير الأمان.",
     "url": "https://abohassan.vercel.app/",
     "telephone": "+966 59 474 0105",
+    "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 24.7136,
+  "longitude": 46.6753},
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "الرياض",
@@ -48,7 +53,11 @@ export default function RootLayout({ children }) {
     },
     "image": [
       "https://abohassan.vercel.app/opengraph-image.jpg"
-    ]
+    ],
+    "author": {
+          "@type": "Person",
+          "name": "Abo Hassan"
+        }
   }
   return (
     <html lang="ar" dir="rtl">
