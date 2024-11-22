@@ -46,10 +46,18 @@ export default function RootLayout({ children }) {
       "areaServed": "SA",
       "availableLanguage": ["Arabic"]
     },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5,
+        "bestRating": 5
+      }},
+
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "150"
+      "ratingValue": 4.9,
+      "reviewCount": 451
     },
     "image": [
       "https://abohassan.vercel.app/opengraph-image.jpg"
