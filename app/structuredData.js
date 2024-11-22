@@ -1,4 +1,3 @@
-'use client'
 export default function StructuredData() {
     const articleStructuredData = {
         "@context": "https://schema.org",
