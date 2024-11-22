@@ -48,7 +48,7 @@ export default function Pricing() {
     <div className="relative isolate bg-white px-6 py-0 sm:py-10 lg:px-8">
      
       <div className="mx-auto max-w-4xl text-center">
-      <h2 className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</h2>
+      <p className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</p>
       <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
       اختاري الباقة المناسبة
       </p>
