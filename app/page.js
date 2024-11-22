@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import BlogSlider from "./components/blog Slider";
 import { getPosts } from './lib/api';
+import StructuredData from './structuredData';
 
 const today = new Date().toISOString();
 
@@ -65,6 +66,8 @@ export default async function Home() {
   
   return (
     <>
+        <StructuredData />
+
       <Hero />
       <Stats />
       <Bento />

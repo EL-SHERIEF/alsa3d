@@ -91,12 +91,8 @@ export default function StructuredData() {
         ]
       }
       return (
-          <head>
-            <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
-            <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
             <script type="application/ld+json">
               {JSON.stringify(articleStructuredData)}
             </script>
-          </head>
       );
 }
