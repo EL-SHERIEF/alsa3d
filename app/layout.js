@@ -39,7 +39,8 @@ export default function RootLayout({ children }) {
       "postalCode": "14951",
       "streetAddress": "طويق، محافظة الرياض السعودية"
     },
-    "openingHours": "Mo-Fr 06:00-18:00",
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Monday","Wednesday","Thursday","Friday"],"closes": "00:00:00","opens": "00:00:00",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+966 59 474 0105",
