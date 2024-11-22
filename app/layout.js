@@ -2,11 +2,11 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header";
 import PrelineScript from "./components/PrelineScript";
-import Head from 'next/head';
 import Footer from "./components/Footer";
 import WaBtn from "./components/shared/whatsappbtn";
 import { Analytics } from "@vercel/analytics/react";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from "@next/third-parties/google";
+import { slides } from "./components/hero"; // Import slides from Hero component
 
 const almarai = localFont({
   src: [
@@ -19,8 +19,7 @@ const almarai = localFont({
 });
 
 export default function RootLayout({ children }) {
-  
-  const articleStructuredData = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ابو حســن لخدمات توصيل الطالبات والموظفات",
@@ -28,9 +27,10 @@ export default function RootLayout({ children }) {
     "url": "https://abohassan.vercel.app/",
     "telephone": "+966 59 474 0105",
     "geo": {
-  "@type": "GeoCoordinates",
-  "latitude": 24.7136,
-  "longitude": 46.6753},
+      "@type": "GeoCoordinates",
+      "latitude": 24.7136,
+      "longitude": 46.6753,
+    },
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       "addressRegion": "منطقة الرياض",
       "addressCountry": "SA",
       "postalCode": "14951",
-      "streetAddress": "طويق، محافظة الرياض السعودية"
+      "streetAddress": "طويق، محافظة الرياض السعودية",
     },
     "openingHours": "Mo-Su 00:00-23:59",
     "contactPoint": {
@@ -46,54 +46,73 @@ export default function RootLayout({ children }) {
       "telephone": "+966 59 474 0105",
       "contactType": "Customer Service",
       "areaServed": "SA",
-      "availableLanguage": ["Arabic"]
+      "availableLanguage": ["Arabic"],
     },
-    "review": [{
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+        },
+        "author": {
+          "@type": "Person",
+          "name": "ام عبدالرحمن",
+        },
       },
-      "author": {
-        "@type": "Person",
-        "name": "ام عبدالرحمن"
-      }
-     },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+        },
+        "author": {
+          "@type": "Person",
+          "name": "امينة المحمدي",
+        },
       },
-      "author": {
-        "@type": "Person",
-        "name": "امينة المحمدي"
-      }
-    }],
-
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 4.9,
-      "reviewCount": 451
+      "reviewCount": 451,
     },
-    "image": [
-      "https://abohassan.vercel.app/opengraph-image.jpg"
-    ],
-  }
+    "image": ["https://abohassan.vercel.app/opengraph-image.jpg"],
+    // Add services dynamically based on Hero slides
+    "makesOffer": slides.map((slide) => ({
+      "@type": "Offer",
+      "name": slide.tag,
+      "description": slide.title,
+      "url": slide.linkHref,
+      "image": slide.image.src,
+      "price": "Contact for pricing",
+      "priceCurrency": "SAR",
+    })),
+  };
+
   return (
     <html lang="ar" dir="rtl">
       <head>
-        <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
-        <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
+        <link
+          rel="alternate"
+          hrefLang="ar"
+          href="https://abohassan.vercel.app/"
+        />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://abohassan.vercel.app/"
+        />
+        {/* Render structured data */}
         <script type="application/ld+json">
-          {JSON.stringify(articleStructuredData)}
+          {JSON.stringify(structuredData)}
         </script>
       </head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
         <GoogleTagManager gtmId="AW-16770249218" />
         {children}
-        <WaBtn link={'https://wa.me/966594740105'}/>
+        <WaBtn link={"https://wa.me/966594740105"} />
         <Footer />
         <PrelineScript />
         <Analytics />
