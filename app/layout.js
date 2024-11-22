@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import WaBtn from "./components/shared/whatsappbtn";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleTagManager } from '@next/third-parties/google';
-import StructuredData from "./StructuredData";
+import StructuredData from "./structuredData";
 const almarai = localFont({
   src: [
     { path: "./fonts/Almarai-Light.ttf", weight: "300", style: "normal" },
