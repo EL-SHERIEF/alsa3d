@@ -19,7 +19,13 @@ const almarai = localFont({
 });
 
 export default function RootLayout({ children }) {
-  const articleStructuredData = {
+  const deduplicateSchemaTypes = (data) => {
+    if (Array.isArray(data['@type'])) {
+      data['@type'] = data['@type'][0]; // Take only the first type
+    }
+    return data;
+  };
+  const articleStructuredData = deduplicateSchemaTypes({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ابو حســن لخدمات توصيل الطالبات والموظفات",
@@ -78,15 +84,15 @@ export default function RootLayout({ children }) {
     "image": [
       "https://abohassan.vercel.app/opengraph-image.jpg"
     ],
-  }
+  });
   return (
     <html lang="ar" dir="rtl">
       <head>
         <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
         <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
         <script type="application/ld+json">
-          {JSON.stringify(articleStructuredData)}
-        </script>
+        {JSON.stringify(articleStructuredData)}
+      </script>
       </head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
