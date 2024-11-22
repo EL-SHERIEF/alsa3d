@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
       "addressLocality": "الرياض",
       "addressRegion": "منطقة الرياض",
       "addressCountry": "SA",
+      "postalCode": "14951",
       "streetAddress": "طويق، محافظة الرياض السعودية"
     },
     "openingHours": "Mo-Fr 06:00-18:00",
