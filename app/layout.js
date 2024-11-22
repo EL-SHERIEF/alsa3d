@@ -113,12 +113,9 @@ export default function RootLayout({ children }) {
    <head>
    <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
             <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
-            <script
-            id="structured-data"
-          key="structured-data"
-          type="application/ld+json">
-  {JSON.stringify(articleStructuredData)}
-    </script>
+            <script id="schema" type="application/ld+json" dangerouslySetInnerHTML={{__html: `
+       ${JSON.stringify(articleStructuredData)}
+      `}} />
    </head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
