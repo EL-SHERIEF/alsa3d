@@ -114,6 +114,7 @@ export default function RootLayout({ children }) {
    <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
             <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
             <script
+            id="structured-data"
           key="structured-data"
           type="application/ld+json">
   {JSON.stringify(articleStructuredData)}

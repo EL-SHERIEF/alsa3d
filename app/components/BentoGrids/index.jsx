@@ -47,9 +47,9 @@ export default function Bento() {
         <h3 className="bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold">
           افضل خدمة نقل بالمملكة
         </h3>
-        <h2 className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
+        <h1 className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
           خدمة النقل الآمنة والمريحة للطالبات والموظفات بالرياض
-        </h2>
+        </h1>
         <div className="blur-[50px] rounded-full w-[200px] h-[140px] rotate-12 bg-custom-gradient absolute right-[calc(75%-120px)] top-[70px] z-0 opacity-60"></div>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 relative" dir="ltr">
           {content.map((item, index) => (
@@ -57,8 +57,8 @@ export default function Bento() {
               <div className="absolute inset-px rounded-lg bg-[#ffffff88]"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                  <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">{item.title}</h1>
-                  <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">{item.description}</h2>
+                  <h2 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">{item.title}</h2>
+                  <p className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">{item.description}</p>
                 </div>
                 <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 sm:px-10">
                   <Image
