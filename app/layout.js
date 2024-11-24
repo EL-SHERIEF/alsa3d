@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import WaBtn from "./components/shared/whatsappbtn";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleTagManager } from '@next/third-parties/google';
-import Head from "next/head";
+
 const almarai = localFont({
   src: [
     { path: "./fonts/Almarai-Light.ttf", weight: "300", style: "normal" },
@@ -16,9 +16,9 @@ const almarai = localFont({
   ],
   variable: "--font-almarai",
 });
+const today = new Date().toISOString();
 
 export default function RootLayout({ children }) {
-  
   const articleStructuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -39,6 +39,8 @@ export default function RootLayout({ children }) {
       "postalCode": "14951",
       "streetAddress": "طويق، محافظة الرياض السعودية"
     },
+    "dateModified": today,
+    "datePublished": today,
     "openingHours": "Mo-Su 00:00-23:59",
     "contactPoint": {
       "@type": "ContactPoint",

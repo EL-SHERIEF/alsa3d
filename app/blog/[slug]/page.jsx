@@ -135,7 +135,7 @@ export default async function PostPage(props) {
         }}
       />
       <article className="w-[95%] sm:w-[80%] relative mx-auto mt-[65px]">
-        <div className="p-5 bg-green-100 w-full h-[600px] overflow-hidden rounded-3xl">
+        <div className="p-2 sm:p-3 bg-green-100 border-[#36aa5f64] border-2 w-full h-[200px] sm:h-[600px] overflow-hidden rounded-3xl ">
           {post.mainImage && (
             <Image
               className="w-full h-full object-cover rounded-2xl text-neutral-600"
@@ -146,9 +146,9 @@ export default async function PostPage(props) {
             />
           )}
         </div>
-        <div className="px-12 sm:px-24 py-16 bg-green-100 rounded-3xl mt-4 text-start text-base">
-          <h1 className="text-center text-2xl sm:text-3xl font-black">{post.title}</h1>
-          <h2 className="!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit mx-auto rounded-full font-bold text-white">
+        <div className="px-6 sm:px-20 py-10 sm:py-16 bg-green-100 border-[#36aa5f64] border-2 rounded-3xl mt-4 text-start text-base">
+          <h1 className="text-start text-2xl sm:text-4xl font-black">{post.title}</h1>
+          <h2 className="!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit rounded-full font-bold text-white">
             {new Date(post._updatedAt).toLocaleDateString("ar-SA", { dateStyle: "long" })}
           </h2>
           <div className="my-12">
