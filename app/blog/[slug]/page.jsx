@@ -18,11 +18,17 @@ export async function generateMetadata(props) {
   const simplifiedText = rawBodyText.replace(/<[^>]+>/g, "");
   const excerpt = simplifiedText.substring(0, 160); // Default meta description length
   const today = new Date().toISOString();
+  const titleSimplified = post.title.substring(0, 48);
 
   return {
-    title: `${post.title} - أبو حسن`,
-    description: post.excerpt || excerpt || "أبو حسن لتوصيل الكلية التقنية والكلية الرقمية",
-    keywords: post.keywords?.join(", ") || "مدونة, توصيل, أبو حسن, كلية التقنية, كلية الرقمية",
+    title: `أبوحسن - ${titleSimplified}...`,
+    description: excerpt,
+    keywords: post.keywords?.join(", ") || [
+      "نقل طالبات في الرياض", "توصيل طالبات", "الكلية الرقمية",
+      "باصات كلية التقنية", "توصيل طالبات الكلية الرقمية", "توصيل الطالبات في الرياض",
+      "نقل كلية البنات", "سائق كلية بنات", "توصيل موظفات الرياض",
+      "سائق خاص للموظفات", "باصات كلية البنات", "توصيل الكلية الرقمية بالرياض"
+    ],
     referrer: "origin-when-cross-origin",
     robots: "index, follow",
     canonical: `https://abohassan.vercel.app/blog/${slug}`,
