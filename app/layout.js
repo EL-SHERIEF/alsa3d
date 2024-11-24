@@ -117,6 +117,7 @@ export default function RootLayout({ children }) {
    <head>
    <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
             <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
+            <meta name="keywords" content="نقل طالبات في الرياض, ابلكيشن توصيل طلبات, الكلية الرقمية, باصات كلية التقنية, توصيل طالبات الكلية الرقمية, توصيل الطالبات في الرياض, نقل كلية البنات, سائق كلية بنات, توصيل موظفات الرياض, سائق خاص للموظفات, باصات كلية البنات, توصيل الكلية الرقمية بالرياض" />
             <Script 
           key="structured-data"
           type="application/ld+json">
