@@ -126,14 +126,14 @@ export default async function PostPage(props) {
 
   return (
     <>
-      <script
+      <Script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <script
+      <Script
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
