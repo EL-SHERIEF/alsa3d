@@ -53,7 +53,7 @@ export default function Safety() {
               </Link>
               <Link
                 href="https://wa.me/966594740105?text=ما%20هي%20تدابير%20السلامة"
-                className="rounded-xl py-2 px-0 sm:px-5 shadow-sm text-neutral-900 w-fit flex flex-row gap-1 items-center font-bold hover:underline"
+                className="rounded-xl py-2 px-0 sm:px-5 text-neutral-900 w-fit flex flex-row gap-1 items-center font-bold hover:underline"
               >
               اعرفي عن تدابير السلامة
               </Link>

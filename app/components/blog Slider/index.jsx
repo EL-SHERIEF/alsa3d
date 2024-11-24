@@ -47,13 +47,14 @@ export default function BlogSlider({ data, title }) {
                                 {/* Main Image */}
                                 {post.mainImage?.asset && (
                                     <div className='overflow-hidden w-full h-[190px] sm:h-[220px]  rounded-lg relative'>
+                                        <Link href={`/blog/${post.slug.current}`}>
                                          <Image
                                         src={post.mainImage.asset.url}
                                         alt={post.mainImage.alt || 'Blog Image'}
                                         width={400}
                                         height={200}
                                         className=" w-full h-full sm:rounded-md object-cover group-hover/active:scale-110 duration-200"
-                                    />
+                                    /></Link>
                                     </div>
                                 )}
                                 {/* Blog Title */}
