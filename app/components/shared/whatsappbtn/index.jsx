@@ -22,14 +22,13 @@ export default function WaBtn({ link }) {
 
   return (
     <div
-      className="fixed right-2 sm:right-4 bottom-4 flex items-center space-x-2 z-10"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className="fixed right-2 sm:right-4 bottom-4 flex items-center z-10"
     >
       {/* WhatsApp Icon */}
       <div
-        className="rounded-full bg-[#00FF1E] p-4 text-black flex items-center justify-center me-3 sm:me-4"
-
+        className="rounded-full bg-[#00FF1E] p-4 text-black flex items-center justify-center"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         target="_blank"
       >
         <svg width="30" height="30" viewBox="0 0 473 490" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,9 +39,12 @@ export default function WaBtn({ link }) {
 
       {/* Message Input and Send Arrow (Appears on Hover or if Message has Text) */}
       <div
-        className={`flex items-center gap-3 transition-opacity duration-150 ${
-          isHovered || message ? 'opacity-100' : 'opacity-0'
+        className={`flex items-center gap-3 transition-opacity duration-150 ps-4 ${
+          isHovered || message ? 'block' : 'hidden'
+          
         }`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <textarea
           className="bg-[#2A3942] text-white placeholder-[#7E8F98] p-[10px] sm:px-[20px] px-[10px] overflow-hidden resize-none max-h-[45px] rounded-xl outline-none ring-8 ring-[#202C33] text-right w-64 transition-all duration-500"
