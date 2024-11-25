@@ -73,7 +73,9 @@ export default async function PostPage({ params }) {
             {new Date(post._updatedAt).toLocaleDateString("ar-SA", { dateStyle: "long" })}
           </h2>
           <div className="my-12">
-            <PortableText value={post.body} />
+          <div className={styles.body}>
+              <PortableText value={post.body} />
+            </div>
             <div className="w-full flex flex-wrap justify-center items-start gap-2 my-16">
               {post.keywords.map((keyword) => (
                 <span
