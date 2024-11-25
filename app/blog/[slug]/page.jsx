@@ -159,7 +159,7 @@ export default async function PostPage(props) {
           </h2>
           <div className="my-12">
             <div className={styles.body}>
-              <PortableText value={post.body} />
+              <PortableText value={post.body}/>
             </div>
             <div className="w-full flex flex-wrap justify-center items-start flex-row gap-2 my-16">
               {post.keywords.map((keyword) => (
