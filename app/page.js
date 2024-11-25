@@ -1,3 +1,5 @@
+// page.js
+
 import Home from "./Home";
 
 export const metadata = {

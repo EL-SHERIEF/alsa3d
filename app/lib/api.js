@@ -1,5 +1,5 @@
 import { client } from '../../sanity/lib/client';
-
+// /lib/api.js
 // Fetch a single post by its slug
 export async function getPostBySlug(slug) {
   const query = `*[_type == "post" && slug.current == $slug][0]{

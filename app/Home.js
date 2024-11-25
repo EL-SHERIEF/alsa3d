@@ -1,4 +1,6 @@
-'use client'; // Client-side component
+'use client';
+// Home.js
+
 
 import { useState, useEffect } from 'react';
 import Hero from "./components/hero";
