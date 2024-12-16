@@ -12,7 +12,6 @@ export const metadata = {
     "سائق خاص للموظفات", "باصات كلية البنات", "توصيل الكلية الرقمية بالرياض"
   ],
   referrer: "origin-when-cross-origin",
-  robots: "index, follow", // Ensures search engines can index and follow links
   canonical: "https://abohassan.vercel.app/",
   openGraph: {
     title: "الخدمة رقم #1 في المملكة - نقل طالبات الكلية التقنية الرقمية",
