@@ -14,10 +14,9 @@ export const metadata = {
   referrer: "origin-when-cross-origin",
   canonical: "https://abohassan.vercel.app/",
   openGraph: {
-    title: "الخدمة رقم #1 في المملكة - نقل طالبات الكلية التقنية الرقمية",
-    description: "خدمة نقل الطالبات وتوصيل الموظفات بأعلى معايير أمان في المملكة. انضمي إلينا لتجربة مريحة وآمنة مع سائقين محترفين - توصيل كلية التقنية الرقمية للبنات في الرياض",
-    url: "https://abohassan.vercel.app/",
-    siteName: "ابو حســن",
+    title: "توصيل كلية التقنية بالرياض - توصيل الكلية الرقمية للبنات بكل راحة وامان",
+    description: "الخدمة رقم #1 في المملكة - توصيل طالبات الكلية التقنية الرقمية. انضمي إلينا لتجربة مريحة وآمنة مع سائقين محترفين - نقل الكلية الرقمية التقنية للبنات في الرياض",
+      siteName: "ابو حســن",
     images: [
       {
         url: "https://abohassan.vercel.app/opengraph-image.jpg",
