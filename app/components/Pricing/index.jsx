@@ -5,7 +5,7 @@ const tiers = [
     name: 'شهري',
     id: 'tier-hobby',
     href: "https://wa.me/966594740105?text=اشتراك%20شهري",
-    priceMonthly: '500 ر.س',
+    priceMonthly: '499 ر.س',
     terms: '/الشهر',
     description: "احسن باقة اذا كنتي تبحثين عن المرونة",
     features: [
@@ -13,25 +13,25 @@ const tiers = [
       'التزام مواعيد صارم جداً',
       'يمكن التوصيل في ايام العطل',
       'خدمة متكاملة لكل مميزاتنا بسعر شامل',
-      'الراحة والجودة بأفضل تكلفة',
+      'الراحة والجودة بأقل تكلفة',
       'سعر شفاف وبدون مفاجآت',
     ],
     featured: false,
   },
   {
-    name: 'موسمي',
+    name: 'سنوي',
     id: 'tier-enterprise',
     href: "https://wa.me/966594740105?text=اشتراك%20موسمي",
-    priceMonthly: '450 ر.س',
+    priceMonthly: '398ر.س',
     terms: '/ الشهر',
     description: 'احسن باقة للطلاب, مناسب للتوفير و راحة البال طوال الفصل الدراسي',
     features: [
       'امان تام',
-      'حضورك طوال الفصل الدراسي مهمتنا',
+      'لا تشيلي هم الدوام طوال العام',
       'التزام مواعيد صارم جداً',
       'يمكن التوصيل في ايام العطل',
       'خدمة متكاملة لكل مميزاتنا بسعر شامل',
-      'الراحة والجودة بأفضل تكلفة',
+      'الراحة والجودة بأقل تكلفة',
       'سعر شفاف وبدون مفاجآت',
       'سعر مناسب يلبي احتياجات الجميع',
     ],
@@ -43,7 +43,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Pricing() {
+export default function Pricing({data}) {
   return (
     <div className="relative isolate bg-white px-6 py-0 sm:py-10 lg:px-8">
      
@@ -53,7 +53,7 @@ export default function Pricing() {
       اختاري الباقة المناسبة
       </p>
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-md font-medium text-gray-500 sm:text-lg/8">
-        اختاري باقة مناسبة من الباقتين سواء كنتي موظفة او طالبة الباقات فيها جميع المميزات الي تبحثين عنها, التزام مواعيد, راحة و جودة بأفضل تكلفة وغيرها من المميزات 
+        اختاري باقة مناسبة من الباقتين سواء شهري/سنوي الباقات فيها جميع المميزات الي تبحثين عنها, التزام مواعيد, راحة و جودة بأقل تكلفة وغيرها من المميزات 
    
       </p>
       </div>
