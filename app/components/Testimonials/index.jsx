@@ -46,7 +46,7 @@ export default function Testimonials() {
         },
         {
             quote: "اجمل خدمة اسلوب راقي و سائقين ممتازين ما يتأخرون ابدا",
-            name: "ام حمد",
+            name: "مجهول",
             title: "موظفة",
         },
         {
