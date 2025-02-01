@@ -25,8 +25,7 @@ export default function Bento() {
               سهولة الحجز والإشتراك
               </h1>
               <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-             احجزي في اي وقت بكل سهولة وبدون تعقيدات, سواء اذا كنتي طالبة او موظفة اشتراكنا بيكون مناسب لكي وفي متناول الجميع
-             </h2>
+              احجزي في أي وقت بكل سهولة وبدون تعقيدات، سواء كنتِ موظفة أو طالبة، اشتراكنا سيكون مناسبًا لكِ وفي متناول الجميع.             </h2>
             </div>
             <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-custom-gradient  shadow-2xl">
@@ -34,7 +33,7 @@ export default function Bento() {
                 className="group-hover:scale-110 transition duration-300 ease-in-out  w-full max-lg:max-w-xs h-[100%] object-cover mix-blend-screen"
                 src={road}
                 width={300} height={300}
-                alt="توصيل طالبات جامعة"
+                alt="توصيل موظفات"
                 loading="lazy"
                  placeholder="blur"
               />
@@ -47,17 +46,17 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88] max-lg:rounded-t-[2rem]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات مكيفة ومريحة</h1>
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات خاصة</h1>
               <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-               أسطولنا يضم سيارات هيونداي اتش وان  وجميع السيارات مكيفة مع امكانية تزويد سيارة لكل رحلة, من مميزات سياراتنا ايضا انها مزودة بخدمات عديدة منها شبكة واي فاي مجانا وأنظمة حديثة، لتوفير راحة كاملة خلال الرحلة وجعل التنقل تجربة ممتعة وآمنة. 
-              </h2>
+              جميع سياراتنا مكيفة ومريحة مع إمكانية توفير سيارة خاصة لكل عميلة. بالإضافة إلى توفر خدمات إضافية مثل شبكة واي فاي مجانية لضمان الراحة التامة أثناء التنقل.
+                            </h2>
             </div>
             <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 sm:px-10">
               <Image
                 className="group-hover:scale-110 transition duration-300 ease-in-out"
                 src={h1car}
                 width={270} height={270}
-                alt="سيارة هيونداي اتش 1"
+                alt="سيارة خاصة"
                 loading="lazy"
                  placeholder="blur"
               />
@@ -69,17 +68,17 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">نظام امان والتزام فى المواعيد              </h1>
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">نظام أمان والتزام في المواعيد      </h1>
               <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-              نظام صارم يضمن لكي امان تام ومواعيد حادة لا يمكن التأخر عنها في اي حال من الاحوال, بالأضافة الى سائقين مدربين على اعلى مستوى و مؤهلين بكل بنود الأمان والسلامة
-              </h2>
+              نظام صارم يضمن لكِ الأمان التام والمواعيد الدقيقة، بالإضافة إلى سائقين مدربين على أعلى مستوى لضمان السلامة والراحة.
+                            </h2>
             </div>
             <div className="flex flex-1 items-center justify-center w-full [container-type:inline-size] max-lg:py-6 pb-3">
             <Image
                 className="group-hover:scale-110 transition duration-300 ease-in-out h-[min(152px,40cqw)] object-contain"
                 src={quality}
                 width={350} height={350}
-                alt="سائق خاص للجامعة"
+                alt="سائق خاص"
                  loading="lazy"
                  placeholder="blur"
               />
@@ -92,18 +91,17 @@ export default function Bento() {
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
               <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center ">
-              اسعار مناسبة للكل بجودة افضل وكفاءة اعلى
-</h1>
+              أسعار مناسبة للجميع بجودة وكفاءة أعلى
+              </h1>
               <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-              أسعار تنافسية تراعي احتياجات الطالبات والموظفات، مع الحفاظ على جودة الخدمة وثبات السعر مقارنة بالمميزات
-              </h2>
+              نقدم أسعارًا تنافسية تراعي احتياجات الموظفات مع الحفاظ على جودة الخدمة وضمان استقرار الأسعار مقارنة بالمميزات              </h2>
             </div>
             <div className="relative w-full grow">
             <Image
                 className="group-hover:scale-110 transition duration-300 ease-in-out h-full object-contain"
                 src={money}
                 width={450} height={450}
-                alt="ارخص خدمة توصيل"
+                alt="أرخص خدمة توصيل للموظفات"
                loading="lazy"
                  placeholder="blur"
               />
