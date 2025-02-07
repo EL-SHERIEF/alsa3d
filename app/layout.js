@@ -7,7 +7,7 @@ import WaBtn from "./components/shared/whatsappbtn";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleTagManager } from '@next/third-parties/google';
 import Script from "next/script";
-
+import Unavailable from "./components/unavailable";
 const almarai = localFont({
   src: [
     { path: "./fonts/Almarai-Light.ttf", weight: "300", style: "normal" },
@@ -105,6 +105,7 @@ export default function RootLayout({ children }) {
         <Script key="structured-data" type="application/ld+json">{JSON.stringify(articleStructuredData)}</Script>
       </head>
       <body className={`${almarai.variable} antialiased`}>
+        <Unavailable />
         <Header />
         <GoogleTagManager gtmId="AW-16770249218" />
         {children}
