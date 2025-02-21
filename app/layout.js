@@ -105,7 +105,6 @@ export default function RootLayout({ children }) {
         <Script key="structured-data" type="application/ld+json">{JSON.stringify(articleStructuredData)}</Script>
       </head>
       <body className={`${almarai.variable} antialiased`}>
-        <Unavailable />
         <Header />
         <GoogleTagManager gtmId="AW-16770249218" />
         {children}
