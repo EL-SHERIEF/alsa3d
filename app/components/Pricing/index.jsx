@@ -5,7 +5,7 @@ const tiers = [
     name: 'شهري',
     id: 'tier-hobby',
     href: "https://wa.me/966536965023?text=اشتراك%20شهري",
-    priceMonthly: '799 ر.س',
+    priceMonthly: '499 ر.س',
     terms: '/الشهر',
     description: "احسن باقة اذا كنتي تبحثين عن المرونة",
     features: [
@@ -22,8 +22,8 @@ const tiers = [
     name: 'سنوي',
     id: 'tier-enterprise',
     href: "https://wa.me/966536965023?text=اشتراك%20موسمي",
-    priceMonthly: '1499ر.س',
-    terms: '/ الشهر',
+    priceMonthly: '849ر.س',
+    terms: '/ السنة',
     description: 'احسن باقة للطلاب, مناسب للتوفير و راحة البال طوال الفصل الدراسي',
     features: [
       'امان تام',
