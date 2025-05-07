@@ -30,7 +30,7 @@ export default async function PostPage({ params }) {
     description: excerpt,
     author: {
       "@type": "Person",
-      name: post.author?.name || "أبو حسن",
+      name: post.author?.name || "النمور الماسية",
     },
     datePublished: post._createdAt,
     dateModified: post._updatedAt,

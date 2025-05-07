@@ -6,6 +6,10 @@ import frame1 from "../../frame1.webp"
 import frame2 from "../../frame2.webp"
 import frame3 from "../../frame3.webp"
 import frame4 from "../../frame4.webp"
+import frame5 from "../../frame5.webp"
+import frame6 from "../../frame6.webp"
+import frame7 from "../../frame7.webp"
+
 import { PhoneIcon } from '@heroicons/react/24/solid'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import Slider from 'react-slick';
@@ -13,36 +17,60 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const slides = [
   {
-    image: frame2,
+    image: frame1,
     title: 'توصيل آمن وموثوق لموظفات حي طويق والعوالي بالرياض',
     tag: 'توصيل موظفات غرب الرياض',
     linkText: 'احجزي سيارتك الآن',
-    linkHref: 'https://wa.me/966594740105?text=اشتراك',
+    linkHref: 'https://wa.me/966536965023?text=اشتراك',
     alt: 'توصيل موظفات حي طويق والعوالي',
   },
   {
-    image: frame4,
+    image: frame6,
     title: 'أفضل خدمة توصيل موظفات بأفضل الأسعار في الرياض',
     tag: 'خدمة توصيل مريحة',
     linkText: 'انضمي لنا',
-    linkHref: 'https://wa.me/966594740105?text=اضفني_للمجموعة',
+    linkHref: 'https://wa.me/966536965023?text=اضفني_للمجموعة',
     alt: 'أفضل خدمة توصيل موظفات',
   },
   {
-    image: frame1,
+    image: frame4,
     title: 'احجزي رحلتك بأمان وسرعة في أحياء الدخل المحدود ونجم الدين',
     tag: 'توصيل سريع وموثوق',
     linkText: 'احجزي الآن',
-    linkHref: 'https://wa.me/966594740105?text=اشتراك',
+    linkHref: 'https://wa.me/966536965023?text=اشتراك',
     alt: 'توصيل موظفات حي الدخل المحدود ونجم الدين',
   },
   {
-    image: frame3,
+    image: frame2,
     title: 'نخبة من السائقين لضمان رحلتك براحة وأمان',
     tag: 'سائقين محترفين',
     linkText: 'استمتعي بتوصيل مريح',
-    linkHref: 'https://wa.me/966594740105?text=اشتراك',
+    linkHref: 'https://wa.me/966536965023?text=اشتراك',
     alt: 'نقل آمن للموظفات بالرياض',
+  },
+  {
+    image: frame7,
+    title: 'النقل المؤسسي للجامعات والشركات بالرياض', 
+    tag: 'سيارات متنوعة',
+    linkText: 'طلب الخدمة الان',
+    linkHref: 'https://wa.me/966536965023?text=اشتراك',
+    alt: 'نقل آمن للموظفات بالرياض',
+  },
+  {
+    image: frame5,
+    title: 'طلعات منتصف الليل؟24 ساعة جاهزين ومستعدين',
+    tag: 'سائقين مستعدين',
+    linkText: 'اطلب الان نوصلك في 15 دقيقة',
+    linkHref: 'https://wa.me/966536965023?text=اشتراك',
+    alt: 'نقل ليلي في الرياض',
+  },
+  {
+    image: frame3,
+    title: 'خدمة تجديد الزيارات العائلية بكل سهولة وسرعة',
+    tag: 'إترك الموضوع علينا',
+    linkText: 'انضمي لنا',
+    linkHref: 'https://wa.me/966536965023?text=تجديد%20الزيارات%20العائلية',
+    alt: 'أفضل خدمة توصيل موظفات',
   },
 ];
 

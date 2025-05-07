@@ -4,7 +4,7 @@ const tiers = [
   {
     name: 'شهري',
     id: 'tier-hobby',
-    href: "https://wa.me/966594740105?text=اشتراك%20شهري",
+    href: "https://wa.me/966536965023?text=اشتراك%20شهري",
     priceMonthly: '799 ر.س',
     terms: '/الشهر',
     description: "احسن باقة اذا كنتي تبحثين عن المرونة",
@@ -21,7 +21,7 @@ const tiers = [
   {
     name: 'سنوي',
     id: 'tier-enterprise',
-    href: "https://wa.me/966594740105?text=اشتراك%20موسمي",
+    href: "https://wa.me/966536965023?text=اشتراك%20موسمي",
     priceMonthly: '1499ر.س',
     terms: '/ الشهر',
     description: 'احسن باقة للطلاب, مناسب للتوفير و راحة البال طوال الفصل الدراسي',
@@ -50,7 +50,7 @@ export default function Pricing({data}) {
       <div className="mx-auto max-w-4xl text-center">
       <p className='bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold'>افضل خدمة نقل بالمملكة</p>
       <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
-      اختاري الباقة المناسبة
+      باقات مناسبة للجميع
       </p>
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-md font-medium text-gray-500 sm:text-lg/8">
         اختاري باقة مناسبة من الباقتين سواء شهري/سنوي الباقات فيها جميع المميزات الي تبحثين عنها, التزام مواعيد, راحة و جودة بأقل تكلفة وغيرها من المميزات 
@@ -73,22 +73,22 @@ export default function Pricing({data}) {
           >
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? 'text-black' : 'text-green-400', 'text-base/7 font-semibold')}
+              className={classNames(tier.featured ? 'text-white' : 'text-[#006886]', 'text-base/7 font-semibold')}
             >
               {tier.name}
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span
                 className={classNames(
-                  tier.featured ? 'text-black' : 'text-gray-900',
+                  tier.featured ? 'text-white' : 'text-gray-900',
                   'text-5xl font-semibold tracking-tight',
                 )}
               >
                 {tier.priceMonthly}
               </span>
-              <span className={classNames(tier.featured ? 'text-neutral-900' : 'text-gray-500', 'text-base')}>{tier.terms}</span>
+              <span className={classNames(tier.featured ? 'text-white' : 'text-gray-500', 'text-base')}>{tier.terms}</span>
             </p>
-            <p className={classNames(tier.featured ? 'text-neutral-700' : 'text-gray-600', 'mt-6 text-sm/5')}>
+            <p className={classNames(tier.featured ? 'text-white opacity-85' : 'text-gray-600', 'mt-6 text-sm/5')}>
               {tier.description}
             </p>
             <ul
@@ -99,10 +99,11 @@ export default function Pricing({data}) {
               )}
             >
               {tier.features.map((feature) => (
-                <li key={feature} className="flex gap-x-3 font-medium text-smm flex flex-row justify-start items-center">
+                <li key={feature}
+                className={classNames(tier.featured ? 'text-white' : 'text-black', 'flex gap-x-3 font-medium text-smm flex-row justify-start items-center')}>
                   <CheckIcon
                     aria-hidden="true"
-                    className={classNames(tier.featured ? 'bg-neutral-900 h-6 w-6 rounded-full p-1 text-white stroke-white' : 'text-green-400 h-6 w-5 ', 'flex-none ')}
+                    className={classNames(tier.featured ? 'bg-white h-6 w-6 rounded-full p-1 text-[#006886] stroke-[#006886' : 'text-[#006886] h-6 w-5 ', 'flex-none ')}
                   />
                   {feature}
                 </li>
@@ -113,12 +114,12 @@ export default function Pricing({data}) {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-neutral-900 text-white shadow-sm hover:bg-neutral-800 focus-visible:outline-black'
-                  : 'text-green-400 ring-1 ring-inset ring-green-300 hover:ring-green-400 focus-visible:outline-green-400 bg-green-50',
+                  ? 'bg-white text-[#006886] shadow-sm hover:bg-white/80'
+                  : 'text-[#006886] ring-1 ring-inset ring-[#006886] hover:ring-[#006886] focus-visible:outline-[#006886] bg-[#006886]/10',
                 'mt-8 block rounded-xl px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
               )}
             >
-            انضمي إلينا اليوم
+            انضم إلينا اليوم
             </a>
           </div>
         ))}

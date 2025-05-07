@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --custom-gradient:linear-gradient(to right, #00FFAA, #AAFF00);
+  --custom-gradient:#00C3FF;
 }
 
 body {

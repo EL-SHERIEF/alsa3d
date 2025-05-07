@@ -19,7 +19,7 @@ export default function Safety() {
       </div>
       <div className="bg-white">
         <div className="mx-auto max-w-[93vw] md:max-w-7xl sm:px-6 lg:px- overflow-hidden rounded-2xl">
-          <div className="relative isolate overflow-hidden bg-green-100 px-6 pt-16 shadow-sm sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div className="relative isolate overflow-hidden bg-slate-200 px-6 pt-16 shadow-sm sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <svg
               viewBox="0 0 1024 1024"
               aria-hidden="true"
@@ -28,8 +28,8 @@ export default function Safety() {
               <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
               <defs>
                 <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                  <stop stopColor="#AAFF00" />
-                  <stop offset={1} stopColor=" #00FFAA" />
+                  <stop stopColor="blue" />
+                  <stop offset={1} stopColor="#006886" />
                 </radialGradient>
               </defs>
             </svg>
@@ -42,7 +42,7 @@ export default function Safety() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-3 lg:justify-start">
                 <Link
-                  href="https://wa.me/966594740105?text=الحجز"
+                  href="https://wa.me/966536965023?text=الحجز"
                   className="rounded-xl bg-custom-gradient py-3 sm:py-4 px-5 sm:px-10 shadow-sm text-white w-fit flex flex-row gap-1 items-center font-bold sm:my-0 my-10"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.2" stroke="currentColor" className="size-5">
@@ -51,7 +51,7 @@ export default function Safety() {
                   احجزي الآن
                 </Link>
                 <Link
-                  href="https://wa.me/966594740105?text=ما%20هي%20تدابير%20السلامة"
+                  href="https://wa.me/966536965023?text=ما%20هي%20تدابير%20السلامة"
                   className="rounded-xl py-2 px-0 sm:px-5 text-neutral-900 w-fit flex flex-row gap-1 items-center font-bold hover:underline"
                 >
                   اعرفي تدابير السلامة

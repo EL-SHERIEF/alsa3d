@@ -13,7 +13,7 @@ export default function Bento() {
       <h1 className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
       خدمة النقل الآمنة والمريحة للموظفات بالرياض
       </h1>
-      <div className='blur-[50px] rounded-full w-[200px] h-[140px] rotate-12 bg-custom-gradient absolute right-[calc(75%-120px)] top-[70px] z-0 opacity-60' ></div>
+      <div className='blur-[50px] rounded-full w-[200px] h-[140px] rotate-12 bg-custom-gradient absolute right-[calc(75%-120px)] top-[70px] z-0 opacity-10' />
 
       <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 relative" dir='ltr'>
     

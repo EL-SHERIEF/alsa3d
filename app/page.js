@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "توصيل موظفات غرب الرياض - راحة وأمان في طويق والعوالي ونجم الدين",
     description: "الخدمة رقم #1 في المملكة - توصيل الموظفات في غرب الرياض، حي طويق، العوالي ونجم الدين. انضمي إلينا لتجربة مريحة وآمنة مع سائقين محترفين - نقل الموظفات بأعلى معايير الأمان.",
-    siteName: "ابو حســن",
+    siteName: "النمور الماسية",
     images: [
       {
         url: "https://abohassan.vercel.app/opengraph-image.jpg",
@@ -37,7 +37,7 @@ export const metadata = {
     images: ["https://abohassan.vercel.app/opengraph-image.jpg"],
   },
   additionalMetaTags: [
-    { name: "author", content: "ابو حســن" },
+    { name: "author", content: "النمور الماسية" },
     { name: "theme-color", content: "#ffffff" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     {}

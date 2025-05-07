@@ -91,7 +91,7 @@ export default function Values() {
                 />
                 <p className="text-white text-4xl font-bold z-10">{value.title}</p>
               </div>
-              <button className="flex flex-row-reverse items-center justify-center px-5 py-1 bg-custom-gradient rounded-full text-base/[0] gap-1 z-10">
+              <button className="flex flex-row-reverse items-center text-white justify-center px-5 py-1 bg-custom-gradient rounded-full text-base/[0] gap-1 z-10">
                 المزيد
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,10 +111,10 @@ export default function Values() {
             {/* Back Side */}
             <div className="w-[96%] h-full absolute left-0 top-0 group-hover:scale-x-100 group-hover:opacity-100 duration-200 scale-x-0 bg-custom-gradient opacity-0 px-10 py-10 rounded-2xl flex flex-col justify-between items-start shadow-xl">
               <div className="flex flex-col justify-start items-start gap-3">
-                <p className="text-neutral-900 text-4xl font-bold">{value.title}</p>
-                <p className="text-neutral-800 text-lg font-bold">{value.description}</p>
+                <p className="text-white text-4xl font-bold">{value.title}</p>
+                <p className="text-white text-lg font-bold">{value.description}</p>
               </div>
-              <button className="flex flex-row-reverse items-center justify-center px-5 py-1 bg-neutral-900 text-green-300 rounded-full text-base/[0] gap-1">
+              <button className="flex flex-row-reverse items-center justify-center px-5 py-1 bg-white  text-neutral-900 rounded-full text-base/[0] gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

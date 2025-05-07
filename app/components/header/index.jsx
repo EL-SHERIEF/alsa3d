@@ -45,7 +45,7 @@ export default function Header() {
           <Link className="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none" href="#">من نحن</Link>
           <Link className="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none" href="#">مميزاتنا</Link>
           <Button
-      link="https://wa.me/966594740105?text=اشتراك"
+      link="https://wa.me/966536965023?text=اشتراك"
       Icon={PhoneIcon}
       text="احجز الان"
     />

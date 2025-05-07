@@ -87,7 +87,7 @@ export default function Testimonials() {
                 <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
                    شكراً لكل عملائنا
                 </p>
-                <div className='blur-[50px] rounded-full w-[200px] h-[140px] rotate-12 bg-custom-gradient absolute right-[calc(60%-120px)] top-[70px] z-0 opacity-60'></div>
+                <div className='blur-[50px] rounded-full w-[200px] h-[140px] rotate-12 bg-custom-gradient absolute right-[calc(60%-120px)] top-[70px] z-0 opacity-10'/>
             </div>
 
             <Slider {...settings} className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-3 relative">

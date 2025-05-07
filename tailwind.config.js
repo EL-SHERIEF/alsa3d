@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
         backgroundImage: {
-          'custom-gradient': 'linear-gradient(to right, #00FFAA, #AAFF00) ',
+          'custom-gradient': 'linear-gradient(to right, #006584, #00394B) ',
           'transparent-black-gradient': 'linear-gradient(to bottom, #00FFAA, transparent)',
         },
     },

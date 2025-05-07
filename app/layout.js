@@ -22,10 +22,10 @@ const today = new Date().toISOString();
 const articleStructuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "ابو حســن لخدمات توصيل الموظفات في الرياض",
+  "name": "النمور الماسية لخدمات توصيل الموظفات في الرياض",
   "description": "خدمة نقل الموظفات غرب الرياض بأعلى معايير الأمان، يشمل حي طويق، العوالي، ونجم الدين - توصيل الموظفات بأمان وراحة مع سائقين محترفين.",
   "url": "https://abohassan.vercel.app/",
-  "telephone": "+966 59 474 0105",
+  "telephone": "+966 53 696 5023",
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 24.7136,
@@ -45,7 +45,7 @@ const articleStructuredData = {
   "openingHours": "Mo-Su 00:00-23:59",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+966 59 474 0105",
+    "telephone": "+966 53 696 5023",
     "contactType": "Customer Service",
     "areaServed": "SA",
     "availableLanguage": ["Arabic"]
@@ -99,8 +99,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <head>
-        <link rel="alternate" hrefLang="ar" href="https://abohassan.vercel.app/" />
-        <link rel="alternate" hrefLang="en" href="https://abohassan.vercel.app/" />
+        <link rel="alternate" hrefLang="ar-SA" href="https://abohassan.vercel.app/" />
         <meta name="keywords" content="نقل موظفات في الرياض, توصيل موظفات حي طويق, سائق خاص للموظفات, خدمة نقل الموظفات العوالي, توصيل الموظفات في نجم الدين, باصات نقل الموظفات, خدمات توصيل موظفات آمنة" />
         <Script key="structured-data" type="application/ld+json">{JSON.stringify(articleStructuredData)}</Script>
       </head>
@@ -108,7 +107,7 @@ export default function RootLayout({ children }) {
         <Header />
         <GoogleTagManager gtmId="AW-16770249218" />
         {children}
-        <WaBtn link={'https://wa.me/966594740105'}/>
+        <WaBtn link={'https://wa.me/966536965023'}/>
         <Footer />
         <PrelineScript />
         <Analytics />
