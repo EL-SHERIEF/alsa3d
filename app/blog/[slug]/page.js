@@ -85,7 +85,7 @@ export default async function Page({ params }) {
       {/* Article content */}
       <article className="w-[95%] sm:w-[80%] relative mx-auto mt-[65px]">
         {/* Main Image */}
-        <div className="p-2 sm:p-3 bg-blue-100 border-[#006886] border-2 w-full h-[200px] sm:h-[600px] overflow-hidden rounded-3xl">
+        <div className="p-2 sm:p-3 bg-blue-50 border-[#006886] border-2 w-full h-[200px] sm:h-[600px] overflow-hidden rounded-3xl">
           {post.mainImage && (
             <Image
               className="w-full h-full object-cover rounded-2xl"
@@ -98,7 +98,7 @@ export default async function Page({ params }) {
         </div>
         
         {/* Post Content */}
-        <div className="px-6 sm:px-20 py-10 sm:py-16 bg-blue-100 border-[#006886] border-2 rounded-3xl mt-4 text-start text-base">
+        <div className="px-6 sm:px-20 py-10 sm:py-16 bg-blue-50 border-[#006886] border-2 rounded-3xl mt-4 text-start text-base">
           <h1 className="text-start text-2xl sm:text-4xl font-black">{post.title}</h1>
           <h2 className="!text-sm text-center my-4 px-7 py-1 bg-custom-gradient w-fit rounded-full font-bold text-white">
             {new Date(post._updatedAt).toLocaleDateString("ar-SA", { dateStyle: "long" })}
