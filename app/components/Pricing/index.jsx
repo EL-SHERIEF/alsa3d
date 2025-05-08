@@ -22,8 +22,8 @@ const tiers = [
     name: 'سنوي',
     id: 'tier-enterprise',
     href: "https://wa.me/966536965023?text=اشتراك%20موسمي",
-    priceMonthly: '849ر.س',
-    terms: '/ السنة',
+    priceMonthly: '399ر.س',
+    terms: '/ الشهر',
     description: 'احسن باقة للطلاب, مناسب للتوفير و راحة البال طوال الفصل الدراسي',
     features: [
       'امان تام',
