@@ -20,11 +20,11 @@ export default function WaBtn({ link }) {
 
   return (
     <div
-      className="fixed right-2 sm:right-4 bottom-4 flex items-center z-10"
+      className="fixed right-5 sm:right-5 bottom-5 flex items-center z-10"
     >
       {/* WhatsApp Icon */}
       <div
-        className="rounded-full bg-[#085425] p-4 text-black flex items-center justify-center"
+        className="rounded-lg bg-[#1f8e49] p-5 text-black flex items-center justify-center animate-bounce"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         target="_blank"

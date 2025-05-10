@@ -65,9 +65,9 @@ export default function Values() {
         <h2 className="bg-custom-gradient rounded-lg w-fit px-4 py-[2px] my-5 mx-auto text-white text-[.8rem]/[1.75rem] text-center font-bold">
           قيمنا
         </h2>
-        <p className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
+        <h1 className="!z-10 mx-auto mt-2 max-w-xl text-balance text-center text-2xl font-semibold tracking-tight text-gray-950 sm:text-5xl relative">
           القيم التي تضيء طريقنا
-        </p>
+        </h1>
       </div>
 
       <Slider {...settings} className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-6 relative">
