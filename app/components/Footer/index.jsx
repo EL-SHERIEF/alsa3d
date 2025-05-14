@@ -15,7 +15,7 @@ export default function Footer() {
                 <Link href="/"  className="flex justify-center lg:justify-start">
                 <Image src={logo} width={160} height={160} alt='AboHassan'/>
                 </Link>
-                <p className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-start">احسن خدمة توصيل منتظم في المملكة</p>
+                <h2 className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-start">احسن خدمة توصيل منتظم في المملكة</h2>
                 <Button
       link="tel:+966594740105"
       Icon={PhoneIcon}
