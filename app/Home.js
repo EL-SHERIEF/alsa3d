@@ -38,7 +38,7 @@ export default function Home() {
       <Values />
       <Safety />
       <Testimonials />
-      <Pricing />
+    {/* <Pricing />*/} 
       <BlogSlider data={posts} title="المدونة" />
     </>
   );

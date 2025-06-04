@@ -46,9 +46,9 @@ export default function Bento() {
           <div className="absolute inset-px rounded-lg bg-[#ffffff88] max-lg:rounded-t-[2rem]"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات خاصة</h1>
+              <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">سيارات مريحة ومكيفة</h1>
               <h2 className="mt-2 max-w-lg text-[.8rem]/[1.4rem] text-gray-600 max-lg:text-center">
-              جميع سياراتنا مكيفة ومريحة مع إمكانية توفير سيارة خاصة لكل عميلة. بالإضافة إلى توفر خدمات إضافية مثل شبكة واي فاي مجانية لضمان الراحة التامة أثناء التنقل.
+              جميع سياراتنا مكيفة ومريحة. بالإضافة إلى توفر شبكة واي فاي مجانية لضمان الراحة التامة أثناء التنقل.
                             </h2>
             </div>
             <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 sm:px-10">
