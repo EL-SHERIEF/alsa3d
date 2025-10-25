@@ -106,7 +106,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${almarai.variable} antialiased`}>
         <Header />
-        <Unavailable />
          <GoogleTagManager gtmId="AW-16770249218" />
         {children}
         <WaBtn link={'https://wa.me/966594740105'}/>
